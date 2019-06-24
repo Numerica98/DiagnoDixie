@@ -12,7 +12,7 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_margin="@dimen/margin_view"
-        android:src="@drawable/dExample" />
+        android:src="@drawable/dexample" />
 
     <TextView
         android:id="@+id/tv_PasswordUser"
