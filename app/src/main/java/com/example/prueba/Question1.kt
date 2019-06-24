@@ -22,7 +22,7 @@ class Question1 : AppCompatActivity() {
         var mApp = AppConstants()
 
         //Variable para generar el intent mas adelante
-        val intentQuestion2 = Intent(this@Question1, Question2::class.java)
+        val intentQuestion2 = Intent(this@Question1, Question11::class.java)
 
         tv_question1_g_0_0.setOnClickListener {
             //Aumenta el contador cada vez que se presiona

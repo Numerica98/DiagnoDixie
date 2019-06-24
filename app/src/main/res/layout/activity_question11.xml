@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    android:orientation="vertical"
+    tools:context=".Question11">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_question11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_view"
+                android:text="1. Selecciona la opcion que tenga las palabras iguales"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_main"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_view"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_question11_pa_0.0"
+                    android:layout_width="125dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/margin_view"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:text="pa"
+                    android:textSize="@dimen/text_main"
+                    android:background="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/tv_question11_la_0.1"
+                    android:layout_width="125dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/margin_view"
+                    android:background="@color/colorWhite"
+                    android:layout_toRightOf="@id/tv_question11_pa_0.0"
+                    android:text="la"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/text_main" />
+
+                <TextView
+                    android:id="@+id/tv_question11_ta_1.0"
+                    android:layout_width="125dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/tv_question11_pa_0.0"
+                    android:layout_margin="@dimen/margin_view"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:text="ta"
+                    android:textSize="@dimen/text_main"
+                    android:background="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/tv_question11_ap_1.1"
+                    android:layout_width="125dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/tv_question11_ta_1.0"
+                    android:layout_below="@+id/tv_question11_la_0.1"
+                    android:layout_margin="@dimen/margin_view"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:text="ap"
+                    android:textSize="@dimen/text_main"
+                    android:background="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/tv_question11_ap_2.0"
+                    android:layout_width="125dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/tv_question11_ta_1.0"
+                    android:layout_margin="@dimen/margin_view"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:text="ap"
+                    android:textSize="@dimen/text_main"
+                    android:background="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/tv_question11_pa_2.1"
+                    android:layout_width="125dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/tv_question11_ap_2.0"
+                    android:layout_below="@+id/tv_question11_ap_1.1"
+                    android:layout_margin="@dimen/margin_view"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:text="pa"
+                    android:textSize="@dimen/text_main"
+                    android:background="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/tv_question11_la_3.0"
+                    android:layout_width="125dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/tv_question11_ap_2.0"
+                    android:layout_margin="@dimen/margin_view"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:text="la"
+                    android:textSize="@dimen/text_main"
+                    android:background="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/tv_question11_ta_3.1"
+                    android:layout_width="125dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/tv_question11_la_3.0"
+                    android:layout_below="@+id/tv_question11_pa_2.1"
+                    android:layout_margin="@dimen/margin_view"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:text="ta"
+                    android:textSize="@dimen/text_main"
+                    android:background="@color/colorWhite"/>
+
+            </RelativeLayout>
+            
+            <RadioGroup
+                android:id="@+id/rg_question11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <RadioButton
+                    android:id="@+id/rb_question11_opc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pa y pa; ta y ta; ap y ap; la y la "
+                    android:textSize="@dimen/text_main"
+                    android:layout_margin="@dimen/margin_view"/>
+
+                <RadioButton
+                    android:id="@+id/rb_question11_opc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pa y ap; ta y la; ap y ta; la y pa"
+                    android:textSize="@dimen/text_main"
+                    android:layout_margin="@dimen/margin_view"/>
+
+                <RadioButton
+                    android:id="@+id/rb_question11_opc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pa y la; ta y pa; ap y ta; la y ap "
+                    android:textSize="@dimen/text_main"
+                    android:layout_margin="@dimen/margin_view"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/bt_Question11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_main"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_siguiente"
+                android:textColor="@color/text"
+                android:textSize="@dimen/text_main" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

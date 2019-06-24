@@ -3,10 +3,15 @@ package com.example.prueba
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Question2 : AppCompatActivity() {
+class ResultActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_question2)
+        setContentView(R.layout.activity_result)
+
+        var mApp = AppConstants()
+
+
+
     }
 }
