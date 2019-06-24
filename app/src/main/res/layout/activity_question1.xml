@@ -25,7 +25,7 @@
         android:gravity="center_horizontal">
 
         <TextView
-            android:id="@+id/tv_g_0.0"
+            android:id="@+id/tv_question1_g_0.0"
             android:layout_width="150dp"
             android:layout_height="80dp"
             android:layout_margin="@dimen/margin_view"
@@ -36,10 +36,10 @@
             android:background="@color/colorWhite"/>
 
         <TextView
-            android:id="@+id/tv_p_0.1"
+            android:id="@+id/tv_question1_p_0.1"
             android:layout_width="150dp"
             android:layout_height="80dp"
-            android:layout_toRightOf="@+id/tv_g_0.0"
+            android:layout_toRightOf="@+id/tv_question1_g_0.0"
             android:layout_margin="@dimen/margin_view"
             android:textAlignment="center"
             android:textColor="@color/text"
@@ -48,10 +48,10 @@
             android:background="@color/colorWhite"/>
 
         <TextView
-            android:id="@+id/tv_q_1.0"
+            android:id="@+id/tv_question1_q_1.0"
             android:layout_width="150dp"
             android:layout_height="80dp"
-            android:layout_below="@+id/tv_g_0.0"
+            android:layout_below="@+id/tv_question1_g_0.0"
             android:layout_margin="@dimen/margin_view"
             android:textAlignment="center"
             android:textColor="@color/text"
@@ -60,11 +60,11 @@
             android:background="@color/colorWhite"/>
 
         <TextView
-            android:id="@+id/tv_p_1.1"
+            android:id="@+id/tv_question1_p_1.1"
             android:layout_width="150dp"
             android:layout_height="80dp"
-            android:layout_toRightOf="@+id/tv_q_1.0"
-            android:layout_below="@+id/tv_p_0.1"
+            android:layout_toRightOf="@+id/tv_question1_q_1.0"
+            android:layout_below="@+id/tv_question1_p_0.1"
             android:layout_margin="@dimen/margin_view"
             android:textAlignment="center"
             android:textColor="@color/text"
@@ -73,10 +73,10 @@
             android:background="@color/colorWhite"/>
 
         <TextView
-            android:id="@+id/tv_p_2.0"
+            android:id="@+id/tv_question1_p_2.0"
             android:layout_width="150dp"
             android:layout_height="80dp"
-            android:layout_below="@+id/tv_q_1.0"
+            android:layout_below="@+id/tv_question1_q_1.0"
             android:layout_margin="@dimen/margin_view"
             android:textAlignment="center"
             android:textColor="@color/text"
@@ -85,11 +85,11 @@
             android:background="@color/colorWhite"/>
 
         <TextView
-            android:id="@+id/tv_g_2.1"
+            android:id="@+id/tv_question1_g_2.1"
             android:layout_width="150dp"
             android:layout_height="80dp"
-            android:layout_toRightOf="@+id/tv_p_2.0"
-            android:layout_below="@+id/tv_p_1.1"
+            android:layout_toRightOf="@+id/tv_question1_p_2.0"
+            android:layout_below="@+id/tv_question1_p_1.1"
             android:layout_margin="@dimen/margin_view"
             android:textAlignment="center"
             android:textColor="@color/text"
