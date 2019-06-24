@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/background_app"
-        tools:context=".questions.Question1">
+    android:orientation="vertical"
+    tools:context=".questions.Question2">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -19,11 +18,11 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_question1"
+                android:id="@+id/tv_question2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_view"
-                android:text="1. Haz click en la letra p"
+                android:text="2. Haz click en la letra q"
                 android:textColor="@color/text"
                 android:textSize="@dimen/text_main"/>
 
@@ -34,7 +33,7 @@
                 android:gravity="center_horizontal">
 
                 <TextView
-                    android:id="@+id/tv_question1_g_0.0"
+                    android:id="@+id/tv_question2_g_0.0"
                     android:layout_width="150dp"
                     android:layout_height="80dp"
                     android:layout_margin="@dimen/margin_view"
@@ -45,22 +44,10 @@
                     android:background="@color/colorWhite"/>
 
                 <TextView
-                    android:id="@+id/tv_question1_p_0.1"
+                    android:id="@+id/tv_question2_q_0.1"
                     android:layout_width="150dp"
                     android:layout_height="80dp"
-                    android:layout_toRightOf="@+id/tv_question1_g_0.0"
-                    android:layout_margin="@dimen/margin_view"
-                    android:textAlignment="center"
-                    android:textColor="@color/text"
-                    android:text="@string/text_p"
-                    android:textSize="@dimen/text_main"
-                    android:background="@color/colorWhite"/>
-
-                <TextView
-                    android:id="@+id/tv_question1_q_1.0"
-                    android:layout_width="150dp"
-                    android:layout_height="80dp"
-                    android:layout_below="@+id/tv_question1_g_0.0"
+                    android:layout_toRightOf="@+id/tv_question2_g_0.0"
                     android:layout_margin="@dimen/margin_view"
                     android:textAlignment="center"
                     android:textColor="@color/text"
@@ -69,11 +56,23 @@
                     android:background="@color/colorWhite"/>
 
                 <TextView
-                    android:id="@+id/tv_question1_p_1.1"
+                    android:id="@+id/tv_question2_q_1.0"
                     android:layout_width="150dp"
                     android:layout_height="80dp"
-                    android:layout_toRightOf="@+id/tv_question1_q_1.0"
-                    android:layout_below="@+id/tv_question1_p_0.1"
+                    android:layout_below="@+id/tv_question2_g_0.0"
+                    android:layout_margin="@dimen/margin_view"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:text="@string/text_q"
+                    android:textSize="@dimen/text_main"
+                    android:background="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/tv_question2_p_1.1"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_toRightOf="@+id/tv_question2_q_1.0"
+                    android:layout_below="@+id/tv_question2_q_0.1"
                     android:layout_margin="@dimen/margin_view"
                     android:textAlignment="center"
                     android:textColor="@color/text"
@@ -82,10 +81,10 @@
                     android:background="@color/colorWhite"/>
 
                 <TextView
-                    android:id="@+id/tv_question1_p_2.0"
+                    android:id="@+id/tv_question2_p_2.0"
                     android:layout_width="150dp"
                     android:layout_height="80dp"
-                    android:layout_below="@+id/tv_question1_q_1.0"
+                    android:layout_below="@+id/tv_question2_q_1.0"
                     android:layout_margin="@dimen/margin_view"
                     android:textAlignment="center"
                     android:textColor="@color/text"
@@ -94,11 +93,11 @@
                     android:background="@color/colorWhite"/>
 
                 <TextView
-                    android:id="@+id/tv_question1_g_2.1"
+                    android:id="@+id/tv_question2_g_2.1"
                     android:layout_width="150dp"
                     android:layout_height="80dp"
-                    android:layout_toRightOf="@+id/tv_question1_p_2.0"
-                    android:layout_below="@+id/tv_question1_p_1.1"
+                    android:layout_toRightOf="@+id/tv_question2_p_2.0"
+                    android:layout_below="@+id/tv_question2_p_1.1"
                     android:layout_margin="@dimen/margin_view"
                     android:textAlignment="center"
                     android:textColor="@color/text"
@@ -109,7 +108,7 @@
             </RelativeLayout>
 
             <Button
-                android:id="@+id/bt_Question1"
+                android:id="@+id/bt_Question2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/text_main"
@@ -119,7 +118,6 @@
                 android:textSize="@dimen/text_main" />
 
         </LinearLayout>
-
     </ScrollView>
 
 </LinearLayout>

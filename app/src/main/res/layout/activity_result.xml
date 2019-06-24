@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/background_app"
-        tools:context=".ResultActivity">
+        tools:context=".activities.ResultActivity">
 
     <ScrollView
         android:layout_width="match_parent"

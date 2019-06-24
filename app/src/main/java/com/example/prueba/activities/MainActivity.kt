@@ -1,4 +1,4 @@
-package com.example.prueba
+package com.example.prueba.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,8 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
-import com.example.prueba.AppConstants
+import com.example.prueba.constants.AppConstants
+import com.example.prueba.R
 
 class MainActivity : AppCompatActivity() {
 

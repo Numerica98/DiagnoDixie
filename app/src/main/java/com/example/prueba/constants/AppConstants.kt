@@ -1,4 +1,4 @@
-package com.example.prueba
+package com.example.prueba.constants
 
 import android.app.Application
 

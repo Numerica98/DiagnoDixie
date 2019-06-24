@@ -1,8 +1,11 @@
-package com.example.prueba
+package com.example.prueba.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.prueba.constants.AppConstants
+import com.example.prueba.questions.Question1
+import com.example.prueba.R
 import kotlinx.android.synthetic.main.activity_character.*
 
 class CharacterActivity : AppCompatActivity() {
@@ -17,7 +20,7 @@ class CharacterActivity : AppCompatActivity() {
             AppConstants.characterKid = iv_cat.id
 
             //Realiza el intent a la otra primera pregunta
-            val intentQuestion1 = Intent(this@CharacterActivity,Question1::class.java)
+            val intentQuestion1 = Intent(this@CharacterActivity, Question1::class.java)
             startActivity(intentQuestion1)
         }
 
@@ -26,7 +29,7 @@ class CharacterActivity : AppCompatActivity() {
             AppConstants.characterKid = iv_dog.id
 
             //Realiza el intent a la otra primera pregunta
-            val intentQuestion1 = Intent(this@CharacterActivity,Question1::class.java)
+            val intentQuestion1 = Intent(this@CharacterActivity, Question1::class.java)
             startActivity(intentQuestion1)
         }
 
@@ -35,7 +38,7 @@ class CharacterActivity : AppCompatActivity() {
             AppConstants.characterKid = iv_dinosaur.id
 
             //Realiza el intent a la otra primera pregunta
-            val intentQuestion1 = Intent(this@CharacterActivity,Question1::class.java)
+            val intentQuestion1 = Intent(this@CharacterActivity, Question1::class.java)
             startActivity(intentQuestion1)
         }
 
@@ -44,7 +47,7 @@ class CharacterActivity : AppCompatActivity() {
             AppConstants.characterKid = iv_chicken.id
 
             //Realiza el intent a la otra primera pregunta
-            val intentQuestion1 = Intent(this@CharacterActivity,Question1::class.java)
+            val intentQuestion1 = Intent(this@CharacterActivity, Question1::class.java)
             startActivity(intentQuestion1)
         }
 
@@ -53,7 +56,7 @@ class CharacterActivity : AppCompatActivity() {
             AppConstants.characterKid = iv_chicken.id
 
             //Realiza el intent a la otra primera pregunta
-            val intentQuestion1 = Intent(this@CharacterActivity,Question1::class.java)
+            val intentQuestion1 = Intent(this@CharacterActivity, Question1::class.java)
             startActivity(intentQuestion1)
         }
 
@@ -62,7 +65,7 @@ class CharacterActivity : AppCompatActivity() {
             AppConstants.characterKid = iv_penguin.id
 
             //Realiza el intent a la otra primera pregunta
-            val intentQuestion1 = Intent(this@CharacterActivity,Question1::class.java)
+            val intentQuestion1 = Intent(this@CharacterActivity, Question1::class.java)
             startActivity(intentQuestion1)
         }
 

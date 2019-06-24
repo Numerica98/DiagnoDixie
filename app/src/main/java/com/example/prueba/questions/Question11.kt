@@ -1,9 +1,11 @@
-package com.example.prueba
+package com.example.prueba.questions
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.RadioButton
+import com.example.prueba.R
+import com.example.prueba.constants.AppConstants
 import kotlinx.android.synthetic.main.activity_question11.*
 
 class Question11 : AppCompatActivity() {
@@ -21,7 +23,7 @@ class Question11 : AppCompatActivity() {
             var radioButton = findViewById<RadioButton>(valor)
 
             //Variable para realizar el intent mas adelante
-            val intentFinish = Intent(this@Question11,Question19::class.java)
+            val intentFinish = Intent(this@Question11, Question19::class.java)
 
             //Verifica si el radioButton selecionado es el de la respuesta correcta
             if(radioButton == rb_question11_opc1){

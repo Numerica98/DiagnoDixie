@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/background_app"
     android:orientation="vertical"
-    tools:context=".Question11">
+    tools:context=".questions.Question11">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_view"
-                android:text="1. Selecciona la opcion que tenga las palabras iguales"
+                android:text="11. Selecciona la opcion que tenga las palabras iguales"
                 android:textColor="@color/text"
                 android:textSize="@dimen/text_main"/>
 
@@ -40,7 +40,7 @@
                     android:layout_margin="@dimen/margin_view"
                     android:textAlignment="center"
                     android:textColor="@color/text"
-                    android:text="pa"
+                    android:text="@string/text_pa"
                     android:textSize="@dimen/text_main"
                     android:background="@color/colorWhite"/>
 
@@ -51,7 +51,7 @@
                     android:layout_margin="@dimen/margin_view"
                     android:background="@color/colorWhite"
                     android:layout_toRightOf="@id/tv_question11_pa_0.0"
-                    android:text="la"
+                    android:text="@string/text_la"
                     android:textAlignment="center"
                     android:textColor="@color/text"
                     android:textSize="@dimen/text_main" />
@@ -64,7 +64,7 @@
                     android:layout_margin="@dimen/margin_view"
                     android:textAlignment="center"
                     android:textColor="@color/text"
-                    android:text="ta"
+                    android:text="@string/text_ta"
                     android:textSize="@dimen/text_main"
                     android:background="@color/colorWhite"/>
 
@@ -77,7 +77,7 @@
                     android:layout_margin="@dimen/margin_view"
                     android:textAlignment="center"
                     android:textColor="@color/text"
-                    android:text="ap"
+                    android:text="@string/text_ap"
                     android:textSize="@dimen/text_main"
                     android:background="@color/colorWhite"/>
 
@@ -89,7 +89,7 @@
                     android:layout_margin="@dimen/margin_view"
                     android:textAlignment="center"
                     android:textColor="@color/text"
-                    android:text="ap"
+                    android:text="@string/text_ap"
                     android:textSize="@dimen/text_main"
                     android:background="@color/colorWhite"/>
 
@@ -102,7 +102,7 @@
                     android:layout_margin="@dimen/margin_view"
                     android:textAlignment="center"
                     android:textColor="@color/text"
-                    android:text="pa"
+                    android:text="@string/text_pa"
                     android:textSize="@dimen/text_main"
                     android:background="@color/colorWhite"/>
 
@@ -114,7 +114,7 @@
                     android:layout_margin="@dimen/margin_view"
                     android:textAlignment="center"
                     android:textColor="@color/text"
-                    android:text="la"
+                    android:text="@string/text_la"
                     android:textSize="@dimen/text_main"
                     android:background="@color/colorWhite"/>
 
@@ -127,7 +127,7 @@
                     android:layout_margin="@dimen/margin_view"
                     android:textAlignment="center"
                     android:textColor="@color/text"
-                    android:text="ta"
+                    android:text="@string/text_ta"
                     android:textSize="@dimen/text_main"
                     android:background="@color/colorWhite"/>
 

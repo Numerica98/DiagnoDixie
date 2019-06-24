@@ -1,9 +1,12 @@
-package com.example.prueba
+package com.example.prueba.questions
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.RadioButton
+import com.example.prueba.R
+import com.example.prueba.activities.FinishActivity
+import com.example.prueba.constants.AppConstants
 import kotlinx.android.synthetic.main.activity_question19.*
 
 class Question19 : AppCompatActivity() {

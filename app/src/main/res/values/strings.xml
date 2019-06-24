@@ -5,4 +5,16 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_siguiente">Siguiente</string>
     <string name="text_terminar">Terminar prueba</string>
+    <string name="text_g">g</string>
+    <string name="text_p">p</string>
+    <string name="text_q">q</string>
+    <string name="text_pa">pa</string>
+    <string name="text_la">la</string>
+    <string name="text_ta">ta</string>
+    <string name="text_ap">ap</string>
+    <string name="text_3">3</string>
+    <string name="text_f">F</string>
+    <string name="text_e">E</string>
+    <string name="text_d">d</string>
+    <string name="text_b">b</string>
 </resources>
