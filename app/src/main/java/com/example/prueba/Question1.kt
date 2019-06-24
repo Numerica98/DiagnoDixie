@@ -18,9 +18,6 @@ class Question1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question1)
 
-        //Variable para tener acceso a la clase de las constantes
-        var mApp = AppConstants()
-
         //Variable para generar el intent mas adelante
         val intentQuestion2 = Intent(this@Question1, Question11::class.java)
 
@@ -115,7 +112,7 @@ class Question1 : AppCompatActivity() {
                     (touchTextView4 % 2 != 0 && touchTextView5 % 2 != 0) //Que solo esten seleccionados 2 correctos
             ){
                 //Aumenta el puntaje del nino
-                mApp.score = mApp.score +1
+                AppConstants.score = AppConstants.score +1
 
                 //Realiza el intent para ir a la segunda pregunta
                 startActivity(intentQuestion2)

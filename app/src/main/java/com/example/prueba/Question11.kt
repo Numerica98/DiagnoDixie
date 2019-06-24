@@ -12,9 +12,6 @@ class Question11 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question11)
 
-        //Variable para tener acceso a la clase de las constantes
-        var mApp = AppConstants()
-
         //Accion del boton
         bt_Question11.setOnClickListener {
             //Obtiene el radioButton selecionado
@@ -24,12 +21,12 @@ class Question11 : AppCompatActivity() {
             var radioButton = findViewById<RadioButton>(valor)
 
             //Variable para realizar el intent mas adelante
-            val intentFinish = Intent(this@Question11,FinishActivity::class.java)
+            val intentFinish = Intent(this@Question11,Question19::class.java)
 
             //Verifica si el radioButton selecionado es el de la respuesta correcta
             if(radioButton == rb_question11_opc1){
                 //Aumenta el puntaje e inicia la siguiente actividad
-                mApp.score = mApp.score +1
+                AppConstants.score = AppConstants.score +1
                 startActivity(intentFinish)
             }else {
                 //Inicia la siguiente actividad

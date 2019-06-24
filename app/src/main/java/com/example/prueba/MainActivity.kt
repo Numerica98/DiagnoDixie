@@ -14,9 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Variable para tener acceso a la clase de las constantes
-        var mApp = AppConstants()
-
         //Accion del boton Next
         bt_Next.setOnClickListener {
             //Si el cuadro de texto viene vacio, no deja seguir y manda un aviso
@@ -24,7 +21,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"Debe ingresar un password para iniciar", Toast.LENGTH_LONG).show()
             }else{
                 //Toma el valor de la caja de texto y lo guarda en la variable
-                mApp.passwordUser = ed_PaswwordUser.text.toString()
+                AppConstants.passwordUser = ed_PaswwordUser.text.toString()
 
                 //Realiza el intent a la siguiente clase
                 val intentCharacter= Intent(this@MainActivity, CharacterActivity::class.java)
