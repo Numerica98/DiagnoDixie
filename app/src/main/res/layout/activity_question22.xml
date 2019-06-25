@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_app"
+        android:orientation="vertical"
+        tools:context=".questions.Question22">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv_question22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_view"
+                    android:text="21. Que letra es?"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/text_main"/>
+
+            <RadioGroup
+                    android:id="@+id/rg_question22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <RadioButton
+                        android:id="@+id/rb_question22_opc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 "
+                        android:textSize="@dimen/text_main"
+                        android:layout_margin="@dimen/margin_view"/>
+
+                <RadioButton
+                        android:id="@+id/rb_question22_opc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E"
+                        android:textSize="@dimen/text_main"
+                        android:layout_margin="@dimen/margin_view"/>
+
+                <RadioButton
+                        android:id="@+id/rb_question22_opc3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="F"
+                        android:textSize="@dimen/text_main"
+                        android:layout_margin="@dimen/margin_view"/>
+
+            </RadioGroup>
+
+            <Button
+                    android:id="@+id/bt_Question22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_main"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/text_siguiente"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/text_main" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
