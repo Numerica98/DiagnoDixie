@@ -7,62 +7,74 @@
     android:orientation="vertical"
     android:background="@color/background_app">
 
-    <ImageView
-        android:id="@+id/iv_logoMain"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_margin="@dimen/margin_view"
-        android:src="@drawable/dexample" />
-
-    <TextView
-        android:id="@+id/tv_EdadKid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_view"
-        android:text="Ingrese la edad de el/la nino/a: "
-        android:textSize="@dimen/text_main"
-        android:textColor="@color/text"/>
-
-    <EditText
-        android:id="@+id/ed_EdadKid"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_view"
-        android:background="@color/colorWhite"
-        android:textAlignment="center"
-        android:inputType="number"
-        android:hint=" Ej: 6"
-        android:textSize="@dimen/text_main" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/tv_PasswordUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_view"
-        android:text="@string/text_ingrese_contra"
-        android:textSize="@dimen/text_main"
-        android:textColor="@color/text"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
 
-    <EditText
-        android:id="@+id/ed_PaswwordUser"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_view"
-        android:background="@color/colorWhite"
-        android:textAlignment="center"
-        android:inputType="textPassword"
-        android:hint="@string/text_ej_edittext"
-        android:textSize="@dimen/text_main" />
+            <ImageView
+                android:id="@+id/iv_logoMain"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_margin="@dimen/margin_view"
+                android:src="@drawable/dexample" />
 
-    <Button
-        android:id="@+id/bt_Next"
-        android:layout_width="@dimen/width_button"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_view"
-        android:text="@string/text_siguiente"
-        android:textSize="@dimen/text_main"
-        android:textColor="@color/text_button"
-        android:background="@color/background_button"
-        tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/tv_EdadKid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_view"
+                android:text="Ingrese la edad de el/la nino/a: "
+                android:textSize="@dimen/text_main"
+                android:textColor="@color/text"/>
 
+            <EditText
+                android:id="@+id/ed_EdadKid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_view"
+                android:background="@color/colorWhite"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:hint=" Ej: 6"
+                android:textSize="@dimen/text_main" />
+
+            <TextView
+                android:id="@+id/tv_PasswordUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_view"
+                android:text="@string/text_ingrese_contra"
+                android:textSize="@dimen/text_main"
+                android:textColor="@color/text"/>
+
+            <EditText
+                android:id="@+id/ed_PaswwordUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_view"
+                android:background="@color/colorWhite"
+                android:textAlignment="center"
+                android:inputType="textPassword"
+                android:hint="@string/text_ej_edittext"
+                android:textSize="@dimen/text_main" />
+
+            <Button
+                android:id="@+id/bt_Next"
+                android:layout_width="@dimen/width_button"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_view"
+                android:text="@string/text_siguiente"
+                android:textSize="@dimen/text_main"
+                android:textColor="@color/text_button"
+                android:background="@color/background_button"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
