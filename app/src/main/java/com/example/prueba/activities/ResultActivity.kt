@@ -16,10 +16,13 @@ class ResultActivity : AppCompatActivity() {
         //Coloca el valor del puntaje
         tv_AnswerCountDetail.setText(AppConstants.score.toString())
 
-        //Dependiendo del puntaje obtenido en la prueba, coloca el diagnostico
-        if(AppConstants.score >= 16){
+        //Dependiendo del puntaje obtenido en la prueba y su edad, coloca el diagnostico
+        if(AppConstants.score >= 16 && (AppConstants.ageKid >=6 && AppConstants.ageKid <=9)){
             tv_RecomendationDetail.setText("El/la menor no presenta la condicion")
-        }else {
+        } else if(AppConstants.score < 16 && (AppConstants.ageKid >=4 && AppConstants.ageKid <=6)){
+            tv_RecomendationDetail.setText("El/la menor tiene una edad muy temprana para definir si presenta o no la condicion")
+        }
+        else {
             tv_RecomendationDetail.setText("El/la menor necesita una evaluacion para apoyar su proceso lector")
         }
 

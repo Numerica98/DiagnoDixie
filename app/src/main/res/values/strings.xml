@@ -78,4 +78,10 @@
     <string name="text_answers">Él/la menor contesto correctamente un total de:</string>
     <string name="text_diagnostic">Por lo que se concluye que:</string>
     <string name="text_title_character">¡Toca a un personaje para iniciar el juego!</string>
+    <string name="text_neko">Neko</string>
+    <string name="text_dogui">Dogui</string>
+    <string name="text_rex">Rex</string>
+    <string name="text_pio">Pio</string>
+    <string name="text_sharky">Sharky</string>
+    <string name="text_pingui">Pingui</string>
 </resources>

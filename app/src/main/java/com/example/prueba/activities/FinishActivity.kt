@@ -16,19 +16,25 @@ class FinishActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_finish)
 
-        //Setea la imagen con el personaje escogido al inicio
+        //Setea la imagen con el personaje escogido al inicio y el nombre del mismo
         if(AppConstants.characterKid == AppConstants.cat){
             iv_characterSelected.setImageResource(R.drawable.neko)
+            tv_CharacterName.text = AppConstants.catName
         } else if(AppConstants.characterKid == AppConstants.dog){
             iv_characterSelected.setImageResource(R.drawable.dogui)
+            tv_CharacterName.text = AppConstants.dogName
         } else if(AppConstants.characterKid == AppConstants.dinosaur){
             iv_characterSelected.setImageResource(R.drawable.rex)
+            tv_CharacterName.text = AppConstants.dinosaurName
         } else if(AppConstants.characterKid == AppConstants.chiken){
             iv_characterSelected.setImageResource(R.drawable.pio)
+            tv_CharacterName.text = AppConstants.chikenName
         } else if(AppConstants.characterKid == AppConstants.shark){
             iv_characterSelected.setImageResource(R.drawable.sharky)
+            tv_CharacterName.text = AppConstants.sharkName
         } else if(AppConstants.characterKid == AppConstants.penguin){
             iv_characterSelected.setImageResource(R.drawable.pingui)
+            tv_CharacterName.text = AppConstants.penguinName
         }
 
         //Accion del boton

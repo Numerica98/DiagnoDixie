@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
@@ -46,7 +45,7 @@
                     android:layout_below="@id/iv_cat"
                     android:textSize="@dimen/text_main"
                     android:layout_marginLeft="@dimen/dimen_name_left"
-                    android:text="Neko"
+                    android:text="@string/text_neko"
                     android:textAlignment="center"
                     android:textColor="@color/text"/>
 
@@ -67,7 +66,7 @@
                     android:layout_toRightOf="@+id/tv_nameCat"
                     android:textSize="@dimen/text_main"
                     android:layout_marginLeft="@dimen/dimen_name_rigth"
-                    android:text="Dogui"
+                    android:text="@string/text_dogui"
                     android:textAlignment="center"
                     android:textColor="@color/text"/>
 
@@ -86,7 +85,7 @@
                     android:layout_below="@id/iv_dinosaur"
                     android:textSize="@dimen/text_main"
                     android:layout_marginLeft="@dimen/dimen_name_left"
-                    android:text="Rex"
+                    android:text="@string/text_rex"
                     android:textAlignment="center"
                     android:textColor="@color/text"/>
 
@@ -108,8 +107,8 @@
                     android:layout_below="@id/iv_chicken"
                     android:layout_toRightOf="@+id/tv_nameDinosaur"
                     android:textSize="@dimen/text_main"
-                    android:layout_marginLeft="@dimen/dimen_name_rigth"
-                    android:text="Pio"
+                    android:layout_marginLeft="75dp"
+                    android:text="@string/text_pio"
                     android:textAlignment="center"
                     android:textColor="@color/text"/>
 
@@ -127,8 +126,8 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/iv_shark"
                     android:textSize="@dimen/text_main"
-                    android:layout_marginLeft="@dimen/dimen_name_left"
-                    android:text="Sharky"
+                    android:layout_marginLeft="25dp"
+                    android:text="@string/text_sharky"
                     android:textAlignment="center"
                     android:textColor="@color/text"/>
 
@@ -139,8 +138,20 @@
                     android:layout_margin="@dimen/margin_view"
                     android:layout_toEndOf="@+id/iv_shark"
                     android:layout_toRightOf="@+id/iv_shark"
-                    android:layout_below="@+id/iv_chicken"
+                    android:layout_below="@+id/tv_nameChicken"
                     android:src="@drawable/pingui" />
+
+                <TextView
+                    android:id="@+id/tv_namePenguin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_penguin"
+                    android:layout_toRightOf="@+id/tv_nameShark"
+                    android:textSize="@dimen/text_main"
+                    android:layout_marginLeft="@dimen/dimen_name_rigth"
+                    android:text="@string/text_pingui"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"/>
 
             </RelativeLayout>
 

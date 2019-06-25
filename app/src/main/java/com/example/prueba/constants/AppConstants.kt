@@ -15,7 +15,7 @@ class AppConstants {
         var score: Int = 0
 
         //Edad del nino
-        var age: Int = 0
+        var ageKid: Int = 0
 
         //Id personajes
         var cat:Int = 0
@@ -26,12 +26,12 @@ class AppConstants {
         var penguin: Int = 0
 
         //Nombre personajes
-        var catName:String = ""
-        var dogName:String = ""
-        var dinosaurName: String = ""
-        var chikenName: String = ""
-        var sharkName: String = ""
-        var penguinName: String = ""
+        var catName:String = "Neko"
+        var dogName:String = "Dogui"
+        var dinosaurName: String = "Rex"
+        var chikenName: String = "Pio"
+        var sharkName: String = "Sharky"
+        var penguinName: String = "Pingui"
     }
 
 }
