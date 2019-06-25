@@ -3,4 +3,6 @@
     <dimen name="margin_view">10dp</dimen>
     <dimen name="text_main">25sp</dimen>
     <dimen name="width_button">150dp</dimen>
+    <dimen name="dimen_name_left">35dp</dimen>
+    <dimen name="dimen_name_rigth">50dp</dimen>
 </resources>

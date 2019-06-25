@@ -20,7 +20,10 @@ class MainActivity : AppCompatActivity() {
             //Si el cuadro de texto viene vacio, no deja seguir y manda un aviso
             if(TextUtils.isEmpty(ed_PaswwordUser.text)){
                 Toast.makeText(this,"Debe ingresar un password para iniciar", Toast.LENGTH_LONG).show()
-            }else{
+            } else if (TextUtils.isEmpty(ed_EdadKid.text)){
+            Toast.makeText(this,"Debe ingresar una edad para iniciar", Toast.LENGTH_LONG).show()
+            }
+            else{
                 //Toma el valor de la caja de texto y lo guarda en la variable
                 AppConstants.passwordUser = ed_PaswwordUser.text.toString()
 

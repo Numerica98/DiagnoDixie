@@ -15,6 +15,26 @@
         android:src="@drawable/dexample" />
 
     <TextView
+        android:id="@+id/tv_EdadKid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_view"
+        android:text="Ingrese la edad de el/la nino/a: "
+        android:textSize="@dimen/text_main"
+        android:textColor="@color/text"/>
+
+    <EditText
+        android:id="@+id/ed_EdadKid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_view"
+        android:background="@color/colorWhite"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:hint=" Ej: 6"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
         android:id="@+id/tv_PasswordUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,6 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_view"
         android:background="@color/colorWhite"
+        android:textAlignment="center"
         android:inputType="textPassword"
         android:hint="@string/text_ej_edittext"
         android:textSize="@dimen/text_main" />

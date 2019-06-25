@@ -39,6 +39,17 @@
                     android:layout_margin="@dimen/margin_view"
                     android:src="@drawable/neko"/>
 
+                <TextView
+                    android:id="@+id/tv_nameCat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_cat"
+                    android:textSize="@dimen/text_main"
+                    android:layout_marginLeft="@dimen/dimen_name_left"
+                    android:text="Neko"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"/>
+
                 <ImageView
                     android:id="@+id/iv_dog"
                     android:layout_width="100dp"
@@ -48,13 +59,36 @@
                     android:layout_toRightOf="@+id/iv_cat"
                     android:src="@drawable/dogui"/>
 
+                <TextView
+                    android:id="@+id/tv_nameDog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_dog"
+                    android:layout_toRightOf="@+id/tv_nameCat"
+                    android:textSize="@dimen/text_main"
+                    android:layout_marginLeft="@dimen/dimen_name_rigth"
+                    android:text="Dogui"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"/>
+
                 <ImageView
                     android:id="@+id/iv_dinosaur"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="@dimen/margin_view"
-                    android:layout_below="@+id/iv_cat"
+                    android:layout_below="@+id/tv_nameCat"
                     android:src="@drawable/rex" />
+
+                <TextView
+                    android:id="@+id/tv_nameDinosaur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_dinosaur"
+                    android:textSize="@dimen/text_main"
+                    android:layout_marginLeft="@dimen/dimen_name_left"
+                    android:text="Rex"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"/>
 
                 <ImageView
                     android:id="@+id/iv_chicken"
@@ -64,16 +98,39 @@
                     android:layout_toEndOf="@+id/iv_dinosaur"
                     android:layout_toRightOf="@+id/iv_dinosaur"
                     android:layout_alignBaseline="@+id/iv_dinosaur"
-                    android:layout_below="@+id/iv_dog"
+                    android:layout_below="@+id/tv_nameDog"
                     android:src="@drawable/pio" />
+
+                <TextView
+                    android:id="@+id/tv_nameChicken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_chicken"
+                    android:layout_toRightOf="@+id/tv_nameDinosaur"
+                    android:textSize="@dimen/text_main"
+                    android:layout_marginLeft="@dimen/dimen_name_rigth"
+                    android:text="Pio"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"/>
 
                 <ImageView
                     android:id="@+id/iv_shark"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="@dimen/margin_view"
-                    android:layout_below="@+id/iv_dinosaur"
+                    android:layout_below="@+id/tv_nameDinosaur"
                     android:src="@drawable/sharky" />
+
+                <TextView
+                    android:id="@+id/tv_nameShark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_shark"
+                    android:textSize="@dimen/text_main"
+                    android:layout_marginLeft="@dimen/dimen_name_left"
+                    android:text="Sharky"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"/>
 
                 <ImageView
                     android:id="@+id/iv_penguin"
