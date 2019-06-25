@@ -60,8 +60,8 @@ class CharacterActivity : AppCompatActivity() {
         }
 
         //Si toca la imagen del tiburon, guarda el id del tiburon
-        iv_chicken.setOnClickListener {
-            AppConstants.characterKid = iv_chicken.id
+        iv_shark.setOnClickListener {
+            AppConstants.characterKid = iv_shark.id
 
             //Realiza el intent a la otra primera pregunta
             val intentQuestion1 = Intent(this@CharacterActivity, Question1::class.java)
