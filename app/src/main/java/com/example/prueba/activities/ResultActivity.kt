@@ -29,6 +29,12 @@ class ResultActivity : AppCompatActivity() {
             AppConstants.passwordUser = ""
             AppConstants.characterKid = 0
             AppConstants.score = 0
+            AppConstants.cat = 0
+            AppConstants.dog = 0
+            AppConstants.dinosaur = 0
+            AppConstants.chiken = 0
+            AppConstants.shark = 0
+            AppConstants.penguin = 0
 
             //Envia a la pantalla principal
             val intentMain = Intent(this@ResultActivity, MainActivity::class.java)

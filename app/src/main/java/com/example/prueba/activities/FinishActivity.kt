@@ -17,17 +17,17 @@ class FinishActivity : AppCompatActivity() {
         setContentView(R.layout.activity_finish)
 
         //Setea la imagen con el personaje escogido al inicio
-        if(AppConstants.characterKid == iv_cat.id){
+        if(AppConstants.characterKid == AppConstants.cat){
             iv_characterSelected.setImageResource(R.drawable.neko)
-        } else if(AppConstants.characterKid == iv_dog.id){
+        } else if(AppConstants.characterKid == AppConstants.dog){
             iv_characterSelected.setImageResource(R.drawable.dogui)
-        } else if(AppConstants.characterKid == iv_dinosaur.id){
+        } else if(AppConstants.characterKid == AppConstants.dinosaur){
             iv_characterSelected.setImageResource(R.drawable.rex)
-        } else if(AppConstants.characterKid == iv_chicken.id){
+        } else if(AppConstants.characterKid == AppConstants.chiken){
             iv_characterSelected.setImageResource(R.drawable.pio)
-        } else if(AppConstants.characterKid == iv_shark.id){
+        } else if(AppConstants.characterKid == AppConstants.shark){
             iv_characterSelected.setImageResource(R.drawable.sharky)
-        } else if(AppConstants.characterKid == iv_penguin.id){
+        } else if(AppConstants.characterKid == AppConstants.penguin){
             iv_characterSelected.setImageResource(R.drawable.pingui)
         }
 

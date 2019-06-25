@@ -13,6 +13,14 @@ class AppConstants {
 
         //Puntaje del nino
         var score: Int = 0
+
+        //Id personajes
+        var cat:Int = 0
+        var dog:Int = 0
+        var dinosaur:Int = 0
+        var chiken:Int = 0
+        var shark:Int = 0
+        var penguin: Int = 0
     }
 
 }

@@ -14,6 +14,14 @@ class CharacterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_character)
 
+        //Se guardan los id de cada personaje
+        AppConstants.cat = iv_cat.id
+        AppConstants.dog = iv_dog.id
+        AppConstants.dinosaur = iv_dinosaur.id
+        AppConstants.chiken = iv_chicken.id
+        AppConstants.shark = iv_shark.id
+        AppConstants.penguin = iv_penguin.id
+
         //Si toca la imagen del gato
         iv_cat.setOnClickListener {
             //Guarda el id del gato

@@ -29,10 +29,10 @@ class Question4 : AppCompatActivity() {
 
             //Verifica si es un numero impar para cambiar el color de seleccion
             if(touchTextView1 % 2 !=0){
-                tv_question4_d_0_0.setBackgroundColor(resources.getColor(R.color.itemSelect))
+                tv_question4_d_0_0.setBackgroundResource(R.color.itemSelect)
             }else {
                 //En caso de ser par se coloca el color original
-                tv_question4_d_0_0.setBackgroundColor(resources.getColor(R.color.colorWhite))
+                tv_question4_d_0_0.setBackgroundResource(R.color.colorWhite)
             }
         }
 
@@ -42,10 +42,10 @@ class Question4 : AppCompatActivity() {
 
             //Verifica si es un numero impar para cambiar el color de seleccion
             if(touchTextView2 % 2 !=0){
-                tv_question4_b_0_1.setBackgroundColor(resources.getColor(R.color.itemSelect))
+                tv_question4_b_0_1.setBackgroundResource(R.color.itemSelect)
             }else {
                 //En caso de ser par se coloca el color original
-                tv_question4_b_0_1.setBackgroundColor(resources.getColor(R.color.colorWhite))
+                tv_question4_b_0_1.setBackgroundResource(R.color.colorWhite)
             }
         }
 
@@ -55,10 +55,10 @@ class Question4 : AppCompatActivity() {
 
             //Verifica si es un numero impar para cambiar el color de seleccion
             if(touchTextView3 % 2 !=0){
-                tv_question4_p_1_0.setBackgroundColor(resources.getColor(R.color.itemSelect))
+                tv_question4_p_1_0.setBackgroundResource(R.color.itemSelect)
             }else {
                 //En caso de ser par se coloca el color original
-                tv_question4_p_1_0.setBackgroundColor(resources.getColor(R.color.colorWhite))
+                tv_question4_p_1_0.setBackgroundResource(R.color.colorWhite)
             }
         }
 
@@ -68,10 +68,10 @@ class Question4 : AppCompatActivity() {
 
             //Verifica si es un numero impar para cambiar el color de seleccion
             if(touchTextView4 % 2 !=0){
-                tv_question4_d_1_1.setBackgroundColor(resources.getColor(R.color.itemSelect))
+                tv_question4_d_1_1.setBackgroundResource(R.color.itemSelect)
             }else {
                 //En caso de ser par se coloca el color original
-                tv_question4_d_1_1.setBackgroundColor(resources.getColor(R.color.colorWhite))
+                tv_question4_d_1_1.setBackgroundResource(R.color.colorWhite)
             }
         }
 
@@ -81,10 +81,10 @@ class Question4 : AppCompatActivity() {
 
             //Verifica si es un numero impar para cambiar el color de seleccion
             if(touchTextView5 % 2 !=0){
-                tv_question4_d_2_0.setBackgroundColor(resources.getColor(R.color.itemSelect))
+                tv_question4_d_2_0.setBackgroundResource(R.color.itemSelect)
             }else {
                 //En caso de ser par se coloca el color original
-                tv_question4_d_2_0.setBackgroundColor(resources.getColor(R.color.colorWhite))
+                tv_question4_d_2_0.setBackgroundResource(R.color.colorWhite)
             }
         }
 
@@ -94,10 +94,10 @@ class Question4 : AppCompatActivity() {
 
             //Verifica si es un numero impar para cambiar el color de seleccion
             if(touchTextView6 % 2 !=0){
-                tv_question4_b_2_1.setBackgroundColor(resources.getColor(R.color.itemSelect))
+                tv_question4_b_2_1.setBackgroundResource(R.color.itemSelect)
             }else {
                 //En caso de ser par se coloca el color original
-                tv_question4_b_2_1.setBackgroundColor(resources.getColor(R.color.colorWhite))
+                tv_question4_b_2_1.setBackgroundResource(R.color.colorWhite)
             }
         }
 

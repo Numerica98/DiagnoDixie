@@ -36,10 +36,10 @@ class Question6 : AppCompatActivity() {
 
             //Verifica si es un numero impar para cambiar el color de seleccion
             if(touchTextView1 % 2 !=0){
-                textView1.setBackgroundColor(resources.getColor(R.color.itemSelect))
+                textView1.setBackgroundResource(R.color.itemSelect)
             }else {
                 //En caso de ser par se coloca el color original
-                textView1.setBackgroundColor(resources.getColor(R.color.colorWhite))
+                textView1.setBackgroundResource(R.color.colorWhite)
             }
         }
 
@@ -49,10 +49,10 @@ class Question6 : AppCompatActivity() {
 
             //Verifica si es un numero impar para cambiar el color de seleccion
             if(touchTextView2 % 2 !=0){
-                textView2.setBackgroundColor(resources.getColor(R.color.itemSelect))
+                textView2.setBackgroundResource(R.color.itemSelect)
             }else {
                 //En caso de ser par se coloca el color original
-                textView2.setBackgroundColor(resources.getColor(R.color.colorWhite))
+                textView2.setBackgroundResource(R.color.colorWhite)
             }
         }
 
@@ -62,10 +62,10 @@ class Question6 : AppCompatActivity() {
 
             //Verifica si es un numero impar para cambiar el color de seleccion
             if(touchTextView3 % 2 !=0){
-                textView3.setBackgroundColor(resources.getColor(R.color.itemSelect))
+                textView3.setBackgroundResource(R.color.itemSelect)
             }else {
                 //En caso de ser par se coloca el color original
-                textView3.setBackgroundColor(resources.getColor(R.color.colorWhite))
+                textView3.setBackgroundResource(R.color.colorWhite)
             }
         }
 
@@ -75,10 +75,10 @@ class Question6 : AppCompatActivity() {
 
             //Verifica si es un numero impar para cambiar el color de seleccion
             if(touchTextView4 % 2 !=0){
-                textView4.setBackgroundColor(resources.getColor(R.color.itemSelect))
+                textView4.setBackgroundResource(R.color.itemSelect)
             }else {
                 //En caso de ser par se coloca el color original
-                textView4.setBackgroundColor(resources.getColor(R.color.colorWhite))
+                textView4.setBackgroundResource(R.color.colorWhite)
             }
         }
 
