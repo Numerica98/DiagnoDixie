@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_view"
-                android:text="11. Selecciona la opcion que tenga las palabras iguales"
+                android:text="@string/text_question11"
                 android:textColor="@color/text"
                 android:textSize="@dimen/text_main"/>
 

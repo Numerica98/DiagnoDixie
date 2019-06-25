@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_view"
-        android:text="Ingrese una contrasena:"
+        android:text="@string/text_ingrese_contra"
         android:textSize="@dimen/text_main"
         android:textColor="@color/text"/>
 
@@ -30,7 +30,7 @@
         android:layout_margin="@dimen/margin_view"
         android:background="@color/colorWhite"
         android:inputType="textPassword"
-        android:hint=" Ej: *********"
+        android:hint="@string/text_ej_edittext"
         android:textSize="@dimen/text_main" />
 
     <Button

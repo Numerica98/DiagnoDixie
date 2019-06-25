@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_app"
+    android:orientation="vertical"
+    tools:context=".questions.Question10">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_question10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_view"
+            android:text="@string/text_question10"
+            android:textColor="@color/text"
+            android:textSize="@dimen/text_main"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_view"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_question10_pra_0.0"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_margin="@dimen/margin_view"
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:text="@string/text_pra"
+                android:textSize="@dimen/text_main"
+                android:background="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/tv_question10_dar_0.1"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_toRightOf="@+id/tv_question10_pra_0.0"
+                android:layout_margin="@dimen/margin_view"
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:text="@string/text_dar"
+                android:textSize="@dimen/text_main"
+                android:background="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/tv_question10_tar_1.0"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/tv_question10_pra_0.0"
+                android:layout_margin="@dimen/margin_view"
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:text="@string/text_tar"
+                android:textSize="@dimen/text_main"
+                android:background="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/tv_question10_bra_1.1"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_toRightOf="@+id/tv_question10_tar_1.0"
+                android:layout_below="@+id/tv_question10_dar_0.1"
+                android:layout_margin="@dimen/margin_view"
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:text="@string/text_bra"
+                android:textSize="@dimen/text_main"
+                android:background="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/tv_question10_bar_2.0"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/tv_question10_tar_1.0"
+                android:layout_margin="@dimen/margin_view"
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:text="@string/text_bar"
+                android:textSize="@dimen/text_main"
+                android:background="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/tv_question10_tra_2.1"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_toRightOf="@+id/tv_question10_bar_2.0"
+                android:layout_below="@+id/tv_question10_bra_1.1"
+                android:layout_margin="@dimen/margin_view"
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:text="@string/text_tra"
+                android:textSize="@dimen/text_main"
+                android:background="@color/colorWhite"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_Question10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_main"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/text_siguiente"
+            android:textColor="@color/text"
+            android:textSize="@dimen/text_main" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

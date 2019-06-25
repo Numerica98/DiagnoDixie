@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/background_app"
     android:orientation="vertical"
-    tools:context=".questions.Question3">
+    tools:context=".questions.Question9">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -18,11 +18,11 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_question3"
+                android:id="@+id/tv_question9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_view"
-                android:text="@string/text_question3"
+                android:text="@string/text_question9"
                 android:textColor="@color/text"
                 android:textSize="@dimen/text_main"/>
 
@@ -33,82 +33,82 @@
                 android:gravity="center_horizontal">
 
                 <TextView
-                    android:id="@+id/tv_question3_3_0.0"
+                    android:id="@+id/tv_question9_tra_0.0"
                     android:layout_width="150dp"
                     android:layout_height="80dp"
                     android:layout_margin="@dimen/margin_view"
                     android:textAlignment="center"
                     android:textColor="@color/text"
-                    android:text="@string/text_3"
+                    android:text="@string/text_tra"
                     android:textSize="@dimen/text_main"
                     android:background="@color/colorWhite"/>
 
                 <TextView
-                    android:id="@+id/tv_question3_f_0.1"
+                    android:id="@+id/tv_question9_dra_0.1"
                     android:layout_width="150dp"
                     android:layout_height="80dp"
-                    android:layout_toRightOf="@+id/tv_question3_3_0.0"
+                    android:layout_toRightOf="@+id/tv_question9_tra_0.0"
                     android:layout_margin="@dimen/margin_view"
                     android:textAlignment="center"
                     android:textColor="@color/text"
-                    android:text="@string/text_f"
+                    android:text="@string/text_dra"
                     android:textSize="@dimen/text_main"
                     android:background="@color/colorWhite"/>
 
                 <TextView
-                    android:id="@+id/tv_question3_e_1.0"
+                    android:id="@+id/tv_question9_par_1.0"
                     android:layout_width="150dp"
                     android:layout_height="80dp"
-                    android:layout_below="@+id/tv_question3_3_0.0"
+                    android:layout_below="@+id/tv_question9_tra_0.0"
                     android:layout_margin="@dimen/margin_view"
                     android:textAlignment="center"
                     android:textColor="@color/text"
-                    android:text="@string/text_e"
+                    android:text="@string/text_par"
                     android:textSize="@dimen/text_main"
                     android:background="@color/colorWhite"/>
 
                 <TextView
-                    android:id="@+id/tv_question3_3_1.1"
+                    android:id="@+id/tv_question9_tra_1.1"
                     android:layout_width="150dp"
                     android:layout_height="80dp"
-                    android:layout_toRightOf="@+id/tv_question3_e_1.0"
-                    android:layout_below="@+id/tv_question3_f_0.1"
+                    android:layout_toRightOf="@+id/tv_question9_par_1.0"
+                    android:layout_below="@+id/tv_question9_dra_0.1"
                     android:layout_margin="@dimen/margin_view"
                     android:textAlignment="center"
                     android:textColor="@color/text"
-                    android:text="@string/text_3"
+                    android:text="@string/text_tra"
                     android:textSize="@dimen/text_main"
                     android:background="@color/colorWhite"/>
 
                 <TextView
-                    android:id="@+id/tv_question3_f_2.0"
+                    android:id="@+id/tv_question9_pra_2.0"
                     android:layout_width="150dp"
                     android:layout_height="80dp"
-                    android:layout_below="@+id/tv_question3_e_1.0"
+                    android:layout_below="@+id/tv_question9_par_1.0"
                     android:layout_margin="@dimen/margin_view"
                     android:textAlignment="center"
                     android:textColor="@color/text"
-                    android:text="@string/text_f"
+                    android:text="@string/text_pra"
                     android:textSize="@dimen/text_main"
                     android:background="@color/colorWhite"/>
 
                 <TextView
-                    android:id="@+id/tv_question3_f_2.1"
+                    android:id="@+id/tv_question9_bra_2.1"
                     android:layout_width="150dp"
                     android:layout_height="80dp"
-                    android:layout_toRightOf="@+id/tv_question3_f_2.0"
-                    android:layout_below="@+id/tv_question3_3_1.1"
+                    android:layout_toRightOf="@+id/tv_question9_pra_2.0"
+                    android:layout_below="@+id/tv_question9_tra_1.1"
                     android:layout_margin="@dimen/margin_view"
                     android:textAlignment="center"
                     android:textColor="@color/text"
-                    android:text="@string/text_g"
+                    android:text="@string/text_bra"
                     android:textSize="@dimen/text_main"
                     android:background="@color/colorWhite"/>
 
             </RelativeLayout>
 
             <Button
-                android:id="@+id/bt_Question3"
+                android:id="@+id/bt_Question9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/text_main"

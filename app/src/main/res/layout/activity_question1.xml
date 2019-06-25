@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_view"
-                android:text="1. Haz click en la letra p"
+                android:text="@string/text_question1"
                 android:textColor="@color/text"
                 android:textSize="@dimen/text_main"/>
 

@@ -23,7 +23,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_view"
-                    android:text="21. Que letra es?"
+                    android:text="@string/text_question21"
                     android:textColor="@color/text"
                     android:textSize="@dimen/text_main"/>
 
@@ -36,7 +36,7 @@
                         android:id="@+id/rb_question21_opc1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="P "
+                        android:text="@string/text_p_mayus"
                         android:textSize="@dimen/text_main"
                         android:layout_margin="@dimen/margin_view"/>
 
@@ -44,7 +44,7 @@
                         android:id="@+id/rb_question21_opc2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="T"
+                        android:text="@string/text_t_mayus"
                         android:textSize="@dimen/text_main"
                         android:layout_margin="@dimen/margin_view"/>
 
@@ -52,7 +52,7 @@
                         android:id="@+id/rb_question21_opc3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="D"
+                        android:text="@string/text_d_mayus"
                         android:textSize="@dimen/text_main"
                         android:layout_margin="@dimen/margin_view"/>
 

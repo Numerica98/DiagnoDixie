@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
     android:background="@color/background_app"
     android:orientation="vertical"
-        tools:context=".Question4">
+        tools:context=".questions.Question4">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_view"
-                android:text="1. Haz click en la letra b"
+                android:text="@string/text_question4"
                 android:textColor="@color/text"
                 android:textSize="@dimen/text_main"/>
 

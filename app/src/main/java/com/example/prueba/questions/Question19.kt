@@ -20,13 +20,13 @@ class Question19 : AppCompatActivity() {
 
             var radioButton = findViewById<RadioButton>(valor)
 
-            val intentFinish = Intent(this@Question19, Question20::class.java)
+            val intentQuestion20 = Intent(this@Question19, Question20::class.java)
 
             if(radioButton == rb_question19_opc1){
                 AppConstants.score = AppConstants.score +1
-                startActivity(intentFinish)
+                startActivity(intentQuestion20)
             }else{
-                startActivity(intentFinish)
+                startActivity(intentQuestion20)
             }
 
         }

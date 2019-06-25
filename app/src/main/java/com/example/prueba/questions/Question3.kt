@@ -3,7 +3,6 @@ package com.example.prueba.questions
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.prueba.Question4
 import com.example.prueba.R
 import com.example.prueba.constants.AppConstants
 import kotlinx.android.synthetic.main.activity_question3.*
@@ -104,16 +103,7 @@ class Question3 : AppCompatActivity() {
 
         bt_Question3.setOnClickListener {
             //Verifica que esten seleccionados los items correctos
-            if((touchTextView2 % 2 != 0 || touchTextView4 % 2 != 0 || touchTextView5 % 2 != 0) //Que solo uno de los 3 este seleccionado
-                    ||
-                    (touchTextView2 % 2 != 0 && touchTextView4 % 2 != 0 && touchTextView5 % 2 != 0) //Que todos los items correctos esten seleccionados
-                    ||
-                    (touchTextView2 % 2 != 0 && touchTextView4 % 2 != 0 ) //Que esten seleccionados 2 correctos
-                    ||
-                    (touchTextView2 % 2 != 0 && touchTextView5 % 2 != 0) //Que solo esten seleccionados 2 correctos
-                    ||
-                    (touchTextView4 % 2 != 0 && touchTextView5 % 2 != 0) //Que solo esten seleccionados 2 correctos
-            ){
+            if(touchTextView3 % 2 != 0){
                 //Aumenta el puntaje del nino
                 AppConstants.score = AppConstants.score +1
 
