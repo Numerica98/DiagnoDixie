@@ -8,6 +8,9 @@ import com.example.prueba.R
 import kotlinx.android.synthetic.main.activity_result.*
 
 class ResultActivity : AppCompatActivity() {
+    //Variables para determinar el rango de edad al que pertenece el menor
+    var edadPromedioCondicion = 6..9
+    var edadPromedioTempranaACondicion = 4..6
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,12 +20,12 @@ class ResultActivity : AppCompatActivity() {
         tv_AnswerCountDetail.setText(AppConstants.score.toString())
 
         //Dependiendo del puntaje obtenido en la prueba y su edad, coloca el diagnostico
-        if(AppConstants.score >= 16 && (AppConstants.ageKid >=6 && AppConstants.ageKid <=9)){
+        if(AppConstants.score >= 16 && (AppConstants.ageKid in edadPromedioCondicion)){
             tv_RecomendationDetail.setText("El/la menor no presenta la condicion")
-        } else if(AppConstants.score < 16 && (AppConstants.ageKid >=4 && AppConstants.ageKid <=6)){
+        } else if(AppConstants.score < 16 && (AppConstants.ageKid in edadPromedioTempranaACondicion)){
             tv_RecomendationDetail.setText("El/la menor tiene una edad muy temprana para definir si presenta o no la condicion")
         }
-        else {
+        else if(AppConstants.score < 16 && (AppConstants.ageKid in edadPromedioCondicion)){
             tv_RecomendationDetail.setText("El/la menor necesita una evaluacion para apoyar su proceso lector")
         }
 

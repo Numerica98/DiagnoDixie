@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var edadObtenida = ed_EdadKid.text.toString()
+        //var edadObtenida = ed_EdadKid.text.toString()
 
         //Accion del boton Next
         bt_Next.setOnClickListener {
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             else{
                 //Toma el valor de la caja de texto y lo guarda en la variable
                 AppConstants.passwordUser = ed_PaswwordUser.text.toString()
-                AppConstants.ageKid = edadObtenida.toInt()
+                AppConstants.ageKid = ed_EdadKid.inputType
 
                 //Realiza el intent a la siguiente clase
                 val intentCharacter= Intent(this@MainActivity, CharacterActivity::class.java)
