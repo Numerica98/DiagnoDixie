@@ -23,7 +23,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_view"
-                    android:text="25. ¿Que silaba es?"
+                    android:text="@string/text_question25"
                     android:textColor="@color/text"
                     android:textSize="@dimen/text_main"/>
 
@@ -36,7 +36,7 @@
                         android:id="@+id/rb_question25_opc1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="te "
+                        android:text="@string/text_te"
                         android:textSize="@dimen/text_main"
                         android:layout_margin="@dimen/margin_view"/>
 
@@ -44,7 +44,7 @@
                         android:id="@+id/rb_question25_opc2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="pe"
+                        android:text="@string/text_pe"
                         android:textSize="@dimen/text_main"
                         android:layout_margin="@dimen/margin_view"/>
 
@@ -52,7 +52,7 @@
                         android:id="@+id/rb_question25_opc3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="de"
+                        android:text="@string/text_de"
                         android:textSize="@dimen/text_main"
                         android:layout_margin="@dimen/margin_view"/>
 

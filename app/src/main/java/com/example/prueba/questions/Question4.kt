@@ -103,15 +103,9 @@ class Question4 : AppCompatActivity() {
 
         bt_Question4.setOnClickListener {
             //Verifica que esten seleccionados los items correctos
-            if((touchTextView2 % 2 != 0 || touchTextView4 % 2 != 0 || touchTextView5 % 2 != 0) //Que solo uno de los 3 este seleccionado
+            if((touchTextView2 % 2 != 0 || touchTextView6 % 2 != 0) //Que solo uno de los 3 este seleccionado
                     ||
-                    (touchTextView2 % 2 != 0 && touchTextView4 % 2 != 0 && touchTextView5 % 2 != 0) //Que todos los items correctos esten seleccionados
-                    ||
-                    (touchTextView2 % 2 != 0 && touchTextView4 % 2 != 0 ) //Que esten seleccionados 2 correctos
-                    ||
-                    (touchTextView2 % 2 != 0 && touchTextView5 % 2 != 0) //Que solo esten seleccionados 2 correctos
-                    ||
-                    (touchTextView4 % 2 != 0 && touchTextView5 % 2 != 0) //Que solo esten seleccionados 2 correctos
+                    (touchTextView2 % 2 != 0 && touchTextView6 % 2 != 0) //Que todos los items correctos esten seleccionados
             ){
                 //Aumenta el puntaje del nino
                 AppConstants.score = AppConstants.score +1

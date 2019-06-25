@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:background="@color/background_app"
         android:orientation="vertical"
-        tools:context=".questions.Question24">
+        tools:context=".questions.Question32">
 
     <ScrollView
             android:layout_width="match_parent"
@@ -19,47 +19,40 @@
                 android:orientation="vertical">
 
             <TextView
-                    android:id="@+id/tv_question24"
+                    android:id="@+id/tv_question32"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_view"
-                    android:text="@string/text_question24"
+                    android:text="@string/text_question32"
                     android:textColor="@color/text"
                     android:textSize="@dimen/text_main"/>
 
             <RadioGroup
-                    android:id="@+id/rg_question24"
+                    android:id="@+id/rg_question32"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                 <RadioButton
-                        android:id="@+id/rb_question24_opc1"
+                        android:id="@+id/rb_question32_opc1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_te"
+                        android:text="@string/text_p"
                         android:textSize="@dimen/text_main"
                         android:layout_margin="@dimen/margin_view"/>
 
                 <RadioButton
-                        android:id="@+id/rb_question24_opc2"
+                        android:id="@+id/rb_question32_opc2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/text_de"
+                        android:text="@string/text_q"
                         android:textSize="@dimen/text_main"
                         android:layout_margin="@dimen/margin_view"/>
 
-                <RadioButton
-                        android:id="@+id/rb_question24_opc3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/text_pe"
-                        android:textSize="@dimen/text_main"
-                        android:layout_margin="@dimen/margin_view"/>
 
             </RadioGroup>
 
             <Button
-                    android:id="@+id/bt_Question24"
+                    android:id="@+id/bt_Question32"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/text_main"

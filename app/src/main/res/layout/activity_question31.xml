@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:background="@color/background_app"
         android:orientation="vertical"
-        tools:context=".questions.Question27">
+        tools:context=".questions.Question31">
 
     <ScrollView
             android:layout_width="match_parent"
@@ -19,32 +19,32 @@
                 android:orientation="vertical">
 
             <TextView
-                    android:id="@+id/tv_question27"
+                    android:id="@+id/tv_question31"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_view"
-                    android:text="27. Completa la palabra pa-a"
+                    android:text="31. Completa la palabra: \n pa__a"
                     android:textColor="@color/text"
                     android:textSize="@dimen/text_main"/>
 
             <RadioGroup
-                    android:id="@+id/rg_question27"
+                    android:id="@+id/rg_question31"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                 <RadioButton
-                        android:id="@+id/rb_question27_opc1"
+                        android:id="@+id/rb_question31_opc1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="-p- "
+                        android:text="@string/text_p"
                         android:textSize="@dimen/text_main"
                         android:layout_margin="@dimen/margin_view"/>
 
                 <RadioButton
-                        android:id="@+id/rb_question27_opc2"
+                        android:id="@+id/rb_question31_opc2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="-q-"
+                        android:text="@string/text_q"
                         android:textSize="@dimen/text_main"
                         android:layout_margin="@dimen/margin_view"/>
 
@@ -52,7 +52,7 @@
             </RadioGroup>
 
             <Button
-                    android:id="@+id/bt_Question27"
+                    android:id="@+id/bt_Question31"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/text_main"

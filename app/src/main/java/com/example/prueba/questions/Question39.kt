@@ -6,10 +6,9 @@ import android.os.Bundle
 import android.widget.TextView
 import com.example.prueba.R
 import com.example.prueba.constants.AppConstants
-import kotlinx.android.synthetic.main.activity_question10.*
-import kotlinx.android.synthetic.main.activity_question9.*
+import kotlinx.android.synthetic.main.activity_question39.*
 
-class Question10 : AppCompatActivity() {
+class Question39 : AppCompatActivity() {
     //Contadores para controlar si se selecciona el item mas de una vez
     var touchTextView1: Int = 0
     var touchTextView2: Int = 0
@@ -17,21 +16,23 @@ class Question10 : AppCompatActivity() {
     var touchTextView4: Int = 0
     var touchTextView5: Int = 0
     var touchTextView6: Int = 0
+    var touchTextView7: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_question10)
+        setContentView(R.layout.activity_question39)
 
         //Variables de id
-        val textView1 = findViewById<TextView>(R.id.tv_question10_pra_0_0)
-        val textView2 = findViewById<TextView>(R.id.tv_question10_dar_0_1)
-        val textView3 = findViewById<TextView>(R.id.tv_question10_tar_1_0)
-        val textView4 = findViewById<TextView>(R.id.tv_question10_bra_1_1)
-        val textView5 = findViewById<TextView>(R.id.tv_question10_bar_2_0)
-        val textView6 = findViewById<TextView>(R.id.tv_question10_tra_2_1)
+        val textView1 = findViewById<TextView>(R.id.tv_question39_tapon)
+        val textView2 = findViewById<TextView>(R.id.tv_question39_jabon)
+        val textView3 = findViewById<TextView>(R.id.tv_question39_jadon)
+        val textView4 = findViewById<TextView>(R.id.tv_question39_bastion)
+        val textView5 = findViewById<TextView>(R.id.tv_question39_dastion)
+        val textView6 = findViewById<TextView>(R.id.tv_question39_patron)
+        val textView7 = findViewById<TextView>(R.id.tv_question39_patorn)
 
         //Variable para generar el intent mas adelante
-        val intentQuestion11 = Intent(this@Question10, Question19::class.java)
+        val intentQuestion40 = Intent(this@Question39, Question40::class.java)
 
         textView1.setOnClickListener {
             //Aumenta el contador cada vez que se presiona
@@ -111,18 +112,33 @@ class Question10 : AppCompatActivity() {
             }
         }
 
-        bt_Question10.setOnClickListener {
+        textView7.setOnClickListener {
+            //Aumenta el contador cada vez que se presiona
+            touchTextView7 = touchTextView7 +1
+
+            //Verifica si es un numero impar para cambiar el color de seleccion
+            if(touchTextView7 % 2 !=0){
+                textView7.setBackgroundColor(resources.getColor(R.color.itemSelect))
+            }else {
+                //En caso de ser par se coloca el color original
+                textView7.setBackgroundColor(resources.getColor(R.color.colorWhite))
+            }
+        }
+
+        bt_Question39.setOnClickListener {
             //Verifica que esten seleccionados los items correctos
-            if(touchTextView4 % 2 != 0) //Que solo uno de los 3 este seleccionado
-            {
+            if((touchTextView1 % 2 != 0 || touchTextView2 % 2 != 0 || touchTextView4 % 2 != 0 || touchTextView6 % 2 != 0) //Que solo uno de los 3 este seleccionado
+                    ||
+                    (touchTextView1 % 2 != 0 && touchTextView2 % 2 != 0 && touchTextView4 % 2 != 0 && touchTextView6 % 2 != 0) //Que todos los items correctos esten seleccionados
+            ){
                 //Aumenta el puntaje del nino
                 AppConstants.score = AppConstants.score +1
 
                 //Realiza el intent para ir a la segunda pregunta
-                startActivity(intentQuestion11)
+                startActivity(intentQuestion40)
 
             }else {
-                startActivity(intentQuestion11)
+                startActivity(intentQuestion40)
             }
         }
     }

@@ -31,7 +31,7 @@ class Question9 : AppCompatActivity() {
         val textView6 = findViewById<TextView>(R.id.tv_question9_bra_2_1)
 
         //Variable para generar el intent mas adelante
-        val intentQuestion10 = Intent(this@Question9, Question9::class.java)
+        val intentQuestion10 = Intent(this@Question9, Question10::class.java)
 
         textView1.setOnClickListener {
             //Aumenta el contador cada vez que se presiona

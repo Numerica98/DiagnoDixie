@@ -7,25 +7,26 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.prueba.R
 import com.example.prueba.constants.AppConstants
 import kotlinx.android.synthetic.main.activity_question26.*
+import kotlinx.android.synthetic.main.activity_question31.*
 
-class Question26 : AppCompatActivity() {
+class Question31 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_question26)
+        setContentView(R.layout.activity_question31)
 
-        bt_Question26.setOnClickListener {
-            var valor = rg_question26.checkedRadioButtonId
+        bt_Question31.setOnClickListener {
+            var valor = rg_question31.checkedRadioButtonId
 
             var radioButton = findViewById<RadioButton>(valor)
 
-            val intentQuestion28 = Intent(this@Question26, Question28::class.java)
+            val intentQuestion32 = Intent(this@Question31, Question32::class.java)
 
-            if(radioButton == rb_question26_opc2){
+            if(radioButton == rb_question31_opc1){
                 AppConstants.score = AppConstants.score +1
-                startActivity(intentQuestion28)
+                startActivity(intentQuestion32)
             }else{
-                startActivity(intentQuestion28)
+                startActivity(intentQuestion32)
             }
 
         }

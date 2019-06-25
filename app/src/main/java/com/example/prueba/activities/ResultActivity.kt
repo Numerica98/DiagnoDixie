@@ -17,7 +17,7 @@ class ResultActivity : AppCompatActivity() {
         tv_AnswerCountDetail.setText(AppConstants.score.toString())
 
         //Dependiendo del puntaje obtenido en la prueba, coloca el diagnostico
-        if(AppConstants.score >= 2){
+        if(AppConstants.score >= 16){
             tv_RecomendationDetail.setText("El/la menor no presenta la condicion")
         }else {
             tv_RecomendationDetail.setText("El/la menor necesita una evaluacion para apoyar su proceso lector")

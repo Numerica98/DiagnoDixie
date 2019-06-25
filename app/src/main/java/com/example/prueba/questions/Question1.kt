@@ -106,12 +106,6 @@ class Question1 : AppCompatActivity() {
             if((touchTextView2 % 2 != 0 || touchTextView4 % 2 != 0 || touchTextView5 % 2 != 0) //Que solo uno de los 3 este seleccionado
                     ||
                     (touchTextView2 % 2 != 0 && touchTextView4 % 2 != 0 && touchTextView5 % 2 != 0) //Que todos los items correctos esten seleccionados
-                    ||
-                    (touchTextView2 % 2 != 0 && touchTextView4 % 2 != 0 ) //Que esten seleccionados 2 correctos
-                    ||
-                    (touchTextView2 % 2 != 0 && touchTextView5 % 2 != 0) //Que solo esten seleccionados 2 correctos
-                    ||
-                    (touchTextView4 % 2 != 0 && touchTextView5 % 2 != 0) //Que solo esten seleccionados 2 correctos
             ){
                 //Aumenta el puntaje del nino
                 AppConstants.score = AppConstants.score +1
@@ -119,9 +113,7 @@ class Question1 : AppCompatActivity() {
                 //Realiza el intent para ir a la segunda pregunta
                 startActivity(intentQuestion2)
 
-            }else if((touchTextView1 % 2 !=0 || touchTextView3 % 2 != 0)
-                    ||
-                    (touchTextView1 % 2 !=0 && touchTextView3 % 2 != 0)){
+            }else {
                 startActivity(intentQuestion2)
             }
         }

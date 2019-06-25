@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         android:background="@color/background_app"
         android:orientation="vertical"
-        tools:context=".questions.Question29">
+        tools:context=".questions.Question37">
 
     <ScrollView
             android:layout_width="match_parent"
@@ -19,40 +19,47 @@
                 android:orientation="vertical">
 
             <TextView
-                    android:id="@+id/tv_question29"
+                    android:id="@+id/tv_question37"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_view"
-                    android:text="29. Completa la palabra -equeño"
+                    android:text="@string/text_question37"
                     android:textColor="@color/text"
                     android:textSize="@dimen/text_main"/>
 
             <RadioGroup
-                    android:id="@+id/rg_question29"
+                    android:id="@+id/rg_question37"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                 <RadioButton
-                        android:id="@+id/rb_question29_opc1"
+                        android:id="@+id/rb_question37_opc1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="-p- "
+                        android:text="@string/text_p"
                         android:textSize="@dimen/text_main"
                         android:layout_margin="@dimen/margin_view"/>
 
                 <RadioButton
-                        android:id="@+id/rb_question29_opc2"
+                        android:id="@+id/rb_question37_opc2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="-q-"
+                        android:text="@string/text_b"
                         android:textSize="@dimen/text_main"
                         android:layout_margin="@dimen/margin_view"/>
 
+                <RadioButton
+                        android:id="@+id/rb_question37_opc3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_t"
+                        android:textSize="@dimen/text_main"
+                        android:layout_margin="@dimen/margin_view"/>
 
             </RadioGroup>
 
             <Button
-                    android:id="@+id/bt_Question29"
+                    android:id="@+id/bt_Question37"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/text_main"
