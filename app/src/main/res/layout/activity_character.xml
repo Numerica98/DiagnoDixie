@@ -7,12 +7,13 @@
               android:gravity="center"
               android:background="@color/background_app">
 
+
     <TextView
             android:id="@+id/tv_ChooseCharacter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="35sp"
-            android:text="¡Toca a un personaje para iniciar el juego!"
+            android:text="@string/text_title_character"
             android:textAlignment="center"
             android:textColor="@color/text"/>
 
@@ -27,19 +28,16 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="@dimen/margin_view"
-                android:background="@color/text" />
-                <!--android:src="@drawable/neko"/> -->
+                android:src="@drawable/neko"/>
 
         <ImageView
                 android:id="@+id/iv_dog"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="@dimen/margin_view"
-                android:background="@color/text"
                 android:layout_toEndOf="@+id/iv_cat"
-                android:layout_toRightOf="@+id/iv_cat" />
-                <!--android:src="@drawable/dogui"-->
-
+                android:layout_toRightOf="@+id/iv_cat"
+                android:src="@drawable/dogui"/>
 
         <ImageView
                 android:id="@+id/iv_dinosaur"
@@ -47,8 +45,7 @@
                 android:layout_height="100dp"
                 android:layout_margin="@dimen/margin_view"
                 android:layout_below="@+id/iv_cat"
-        android:background="@color/colorWhite"/>
-                <!-- android:src="@drawable/rex" -->
+                android:src="@drawable/rex" />
 
         <ImageView
                 android:id="@+id/iv_chicken"
@@ -59,8 +56,7 @@
                 android:layout_toRightOf="@+id/iv_dinosaur"
                 android:layout_alignBaseline="@+id/iv_dinosaur"
                 android:layout_below="@+id/iv_dog"
-        android:background="@color/colorWhite"/>
-        <!-- android:src="@drawable/pio" -->
+        android:src="@drawable/pio" />
 
         <ImageView
                 android:id="@+id/iv_shark"
@@ -68,8 +64,7 @@
                 android:layout_height="100dp"
                 android:layout_margin="@dimen/margin_view"
                 android:layout_below="@+id/iv_dinosaur"
-        android:background="@color/text"/>
-        <!-- android:src="@drawable/sharky" -->
+        android:src="@drawable/sharky" />
 
         <ImageView
                 android:id="@+id/iv_penguin"
@@ -79,8 +74,7 @@
                 android:layout_toEndOf="@+id/iv_shark"
                 android:layout_toRightOf="@+id/iv_shark"
                 android:layout_below="@+id/iv_chicken"
-        android:background="@color/text"/>
-        <!-- android:src="@drawable/pingui" -->
+        android:src="@drawable/pingui" />
 
     </RelativeLayout>
 

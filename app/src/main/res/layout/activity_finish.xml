@@ -22,7 +22,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FELICIDADES! TERMINASTE EL JUEGO!"
+                android:text="@string/text_congrats"
                 android:textColor="@color/text"
                 android:textSize="@dimen/text_main"
                 android:textAlignment="center"
@@ -40,7 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_view"
-                android:text="Para que tu encargado sepa lo super que te fue, dale el dispositivo para que  ingrese la contasena:"
+                android:text="@string/text_indication_password_result"
                 android:textSize="@dimen/text_main"
                 android:textColor="@color/text"/>
 

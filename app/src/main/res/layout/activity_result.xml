@@ -23,9 +23,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RESULTADOS DE LA PRUEBA"
+                android:text="@string/text_title_result"
                 android:textColor="@color/text"
                 android:textSize="@dimen/text_main"
+                android:layout_margin="@dimen/margin_view"
                 android:textAlignment="center"
                 android:textStyle="italic"/>
 
@@ -34,7 +35,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_view"
-                android:text="El/la menor contesto correctamente un total de: "
+                android:text="@string/text_answers"
+                android:textAlignment="center"
                 android:textSize="@dimen/text_main"
                 android:textColor="@color/text"/>
 
@@ -52,7 +54,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_view"
-                android:text="Por lo que se concluye que:  "
+                android:text="@string/text_diagnostic"
+                android:textAlignment="center"
                 android:textSize="@dimen/text_main"
                 android:textColor="@color/text"/>
 
@@ -62,6 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_view"
                 android:text="Diagnostico"
+                android:textAlignment="center"
                 android:textSize="@dimen/text_main"
                 android:textColor="@color/text"/>
 
