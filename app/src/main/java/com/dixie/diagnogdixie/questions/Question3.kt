@@ -27,6 +27,7 @@ class Question3 : AppCompatActivity() {
         play.setOnClickListener {
             val mp = MediaPlayer.create(this, R.raw.e)
             mp.start()
+            mp.stop()
         }
 
         //Variable para generar el intent mas adelante

@@ -28,6 +28,7 @@ class Question5 : AppCompatActivity() {
         play.setOnClickListener {
             val mp = MediaPlayer.create(this, R.raw.d)
             mp.start()
+            mp.stop()
         }
 
         //Variables de id
