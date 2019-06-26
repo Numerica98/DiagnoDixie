@@ -21,7 +21,6 @@ class Question23 : AppCompatActivity() {
         play.setOnClickListener {
             val mp = MediaPlayer.create(this, R.raw.f)
             mp.start()
-            mp.stop()
         }
 
         bt_Question23.setOnClickListener {
