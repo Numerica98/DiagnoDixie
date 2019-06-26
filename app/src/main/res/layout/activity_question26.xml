@@ -27,6 +27,13 @@
                     android:textColor="@color/text"
                     android:textSize="@dimen/text_main"/>
 
+            <Button
+                    android:id="@+id/btn_play_26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/btn_play_text"/>
+
             <RadioGroup
                     android:id="@+id/rg_question26"
                     android:layout_width="match_parent"

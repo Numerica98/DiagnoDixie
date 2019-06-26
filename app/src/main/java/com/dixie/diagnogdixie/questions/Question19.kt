@@ -1,8 +1,10 @@
 package com.dixie.diagnogdixie.questions
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.RadioButton
 import com.dixie.diagnogdixie.R
 import com.dixie.diagnogdixie.activities.FinishActivity
@@ -14,6 +16,13 @@ class Question19 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question19)
+
+        //Listener e implementacion de sonido
+        val play = findViewById(R.id.btn_play_19) as Button
+        play.setOnClickListener {
+            val mp = MediaPlayer.create(this, R.raw.p)
+            mp.start()
+        }
 
         bt_Question19.setOnClickListener {
             var valor = rg_question19.checkedRadioButtonId

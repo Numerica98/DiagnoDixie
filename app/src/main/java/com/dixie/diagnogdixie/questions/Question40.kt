@@ -113,7 +113,7 @@ class Question40 : AppCompatActivity() {
 
         bt_Question40.setOnClickListener {
             //Verifica que esten seleccionados los items correctos
-            if((touchTextView1 % 2 != 0 || touchTextView3 % 2 != 0 || touchTextView5 % 2 != 0) //Que solo uno de los 3 este seleccionado
+            if((touchTextView1 % 2 != 0 || touchTextView3 % 2 != 0 || touchTextView5 % 2 != 0) //Que solo uno de los tres este seleccionado
                     ||
                     (touchTextView1 % 2 != 0 && touchTextView3 % 2 != 0 && touchTextView5 % 2 != 0) //Que todos los items correctos esten seleccionados
             ){

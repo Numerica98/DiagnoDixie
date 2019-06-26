@@ -127,7 +127,7 @@ class Question39 : AppCompatActivity() {
 
         bt_Question39.setOnClickListener {
             //Verifica que esten seleccionados los items correctos
-            if((touchTextView1 % 2 != 0 || touchTextView2 % 2 != 0 || touchTextView4 % 2 != 0 || touchTextView6 % 2 != 0) //Que solo uno de los 3 este seleccionado
+            if((touchTextView1 % 2 != 0 || touchTextView2 % 2 != 0 || touchTextView4 % 2 != 0 || touchTextView6 % 2 != 0) //Que solo uno de los tres este seleccionado
                     ||
                     (touchTextView1 % 2 != 0 && touchTextView2 % 2 != 0 && touchTextView4 % 2 != 0 && touchTextView6 % 2 != 0) //Que todos los items correctos esten seleccionados
             ){

@@ -1,8 +1,10 @@
 package com.dixie.diagnogdixie.questions
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import com.dixie.diagnogdixie.R
 import com.dixie.diagnogdixie.constants.AppConstants
 import kotlinx.android.synthetic.main.activity_question4.*
@@ -19,6 +21,13 @@ class Question4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question4)
+
+        //Listener e implementacion de sonido
+        val play = findViewById(R.id.btn_play_4) as Button
+        play.setOnClickListener {
+            val mp = MediaPlayer.create(this, R.raw.b)
+            mp.start()
+        }
 
         //Variable para generar el intent mas adelante
         val intentQuestion5 = Intent(this@Question4, Question5::class.java)
@@ -103,7 +112,7 @@ class Question4 : AppCompatActivity() {
 
         bt_Question4.setOnClickListener {
             //Verifica que esten seleccionados los items correctos
-            if((touchTextView2 % 2 != 0 || touchTextView6 % 2 != 0) //Que solo uno de los 3 este seleccionado
+            if((touchTextView2 % 2 != 0 || touchTextView6 % 2 != 0) //Que solo uno de los tres este seleccionado
                     ||
                     (touchTextView2 % 2 != 0 && touchTextView6 % 2 != 0) //Que todos los items correctos esten seleccionados
             ){

@@ -1,8 +1,10 @@
 package com.dixie.diagnogdixie.questions
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import com.dixie.diagnogdixie.R
 import com.dixie.diagnogdixie.constants.AppConstants
@@ -20,6 +22,13 @@ class Question8 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question8)
+
+        //Listener e implementacion de sonido
+        val play = findViewById(R.id.btn_play_8) as Button
+        play.setOnClickListener {
+            val mp = MediaPlayer.create(this, R.raw.tra)
+            mp.start()
+        }
 
         //Variables de id
         val textView1 = findViewById<TextView>(R.id.tv_question8_pra_0_0)
@@ -112,7 +121,7 @@ class Question8 : AppCompatActivity() {
 
         bt_Question8.setOnClickListener {
             //Verifica que esten seleccionados los items correctos
-            if(touchTextView4 % 2 != 0) //Que solo uno de los 3 este seleccionado
+            if(touchTextView4 % 2 != 0) //Que solo uno de los tres este seleccionado
             {
                 //Aumenta el puntaje del nino
                 AppConstants.score = AppConstants.score +1
