@@ -9,8 +9,10 @@ import kotlinx.android.synthetic.main.activity_result.*
 
 class ResultActivity : AppCompatActivity() {
     //Variables para determinar el rango de edad al que pertenece el menor
-    var edadPromedioCondicion = 6..9
-    var edadPromedioTempranaACondicion = 4..6
+    var edadPromedioTempranaACondicion = 1..5
+    var edadRango1 = 6..7
+    var edadRango2 = 8..9
+    var edadRango3 = 10..12
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,13 +22,26 @@ class ResultActivity : AppCompatActivity() {
         tv_AnswerCountDetail.setText(AppConstants.score.toString())
 
         //Dependiendo del puntaje obtenido en la prueba y su edad, coloca el diagnostico
-        if(AppConstants.score >= 16 && (AppConstants.ageKid in edadPromedioCondicion)){
-            tv_RecomendationDetail.setText("El/la menor no presenta la condicion")
+        if(AppConstants.score <=13 && (AppConstants.ageKid in edadRango1)){
+            tv_RecomendationDetail.setText(getString(R.string.text_condicion))
+        } else if(AppConstants.score > 13 && (AppConstants.ageKid in edadRango1)){
+            tv_RecomendationDetail.setText(getString(R.string.text_no_condicion))
+        } else if(AppConstants.score <= 10 && (AppConstants.ageKid in edadRango2)){
+            tv_RecomendationDetail.setText(R.string.text_condicion)
+        } else if(AppConstants.score > 10 && (AppConstants.ageKid in edadRango2)){
+            tv_RecomendationDetail.setText(R.string.text_no_condicion)
+        } else if(AppConstants.score <= 3 && (AppConstants.ageKid in edadRango3)){
+            tv_RecomendationDetail.setText(R.string.text_condicion)
+        } else if(AppConstants.score > 3 && (AppConstants.ageKid in edadRango3)){
+            tv_RecomendationDetail.setText(R.string.text_no_condicion)
         } else if(AppConstants.score < 16 && (AppConstants.ageKid in edadPromedioTempranaACondicion)){
-            tv_RecomendationDetail.setText("El/la menor tiene una edad muy temprana para definir si presenta o no la condicion")
-        }
-        else if(AppConstants.score < 16 && (AppConstants.ageKid in edadPromedioCondicion)){
-            tv_RecomendationDetail.setText("El/la menor necesita una evaluacion para apoyar su proceso lector")
+            tv_RecomendationDetail.setText(getString(R.string.text_codicion_indefinida))
+        } else if(AppConstants.score >= 16 && (AppConstants.ageKid in edadPromedioTempranaACondicion)){
+            tv_RecomendationDetail.setText(R.string.text_no_condicion)
+        } else if(AppConstants.score <= 3 && (AppConstants.ageKid >12)){
+            tv_RecomendationDetail.setText(R.string.text_condicion_mayor)
+        } else if(AppConstants.score > 3 && (AppConstants.ageKid >12)){
+            tv_RecomendationDetail.setText(R.string.text_no_condicion_mayor)
         }
 
         //Accion del boton

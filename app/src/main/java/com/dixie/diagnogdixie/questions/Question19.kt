@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.RadioButton
+import android.widget.Toast
 import com.dixie.diagnogdixie.R
 import com.dixie.diagnogdixie.activities.FinishActivity
 import com.dixie.diagnogdixie.constants.AppConstants
@@ -27,17 +28,21 @@ class Question19 : AppCompatActivity() {
         bt_Question19.setOnClickListener {
             var valor = rg_question19.checkedRadioButtonId
 
-            var radioButton = findViewById<RadioButton>(valor)
+            if(valor == -1){
+                Toast.makeText(this,getString(R.string.text_validar_siguiente), Toast.LENGTH_LONG).show()
+            } else {
 
-            val intentQuestion20 = Intent(this@Question19, Question20::class.java)
+                var radioButton = findViewById<RadioButton>(valor)
 
-            if(radioButton == rb_question19_opc1){
-                AppConstants.score = AppConstants.score +1
-                startActivity(intentQuestion20)
-            }else{
-                startActivity(intentQuestion20)
+                val intentQuestion20 = Intent(this@Question19, Question20::class.java)
+
+                if (radioButton == rb_question19_opc1) {
+                    AppConstants.score = AppConstants.score + 1
+                    startActivity(intentQuestion20)
+                } else {
+                    startActivity(intentQuestion20)
+                }
             }
-
         }
     }
 }

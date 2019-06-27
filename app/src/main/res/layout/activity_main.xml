@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_view"
-                android:text="Ingrese la edad de el/la nino/a: "
+                android:text="@string/text_ingreso_edad"
                 android:textSize="@dimen/text_main"
                 android:textColor="@color/text"/>
 
