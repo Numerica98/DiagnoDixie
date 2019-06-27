@@ -28,6 +28,7 @@ class Question19 : AppCompatActivity() {
         bt_Question19.setOnClickListener {
             var valor = rg_question19.checkedRadioButtonId
 
+            //Verifica que se halla seleccionado una opcion
             if(valor == -1){
                 Toast.makeText(this,getString(R.string.text_validar_siguiente), Toast.LENGTH_LONG).show()
             } else {

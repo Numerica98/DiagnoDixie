@@ -5,6 +5,7 @@ import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.Button
 import android.widget.RadioButton
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.dixie.diagnogdixie.R
 import com.dixie.diagnogdixie.activities.FinishActivity
@@ -29,17 +30,22 @@ class Question20 : AppCompatActivity() {
         bt_Question20.setOnClickListener {
             var valor = rg_question20.checkedRadioButtonId
 
-            var radioButton = findViewById<RadioButton>(valor)
+            //Verifica que se halla seleccionado una opcion
+            if(valor == -1){
+                Toast.makeText(this,getString(R.string.text_validar_siguiente), Toast.LENGTH_LONG).show()
+            } else {
 
-            val intentQuestion21 = Intent(this@Question20, Question21::class.java)
+                var radioButton = findViewById<RadioButton>(valor)
 
-            if(radioButton == rb_question20_opc2){
-                AppConstants.score = AppConstants.score +1
-                startActivity(intentQuestion21)
-            }else{
-                startActivity(intentQuestion21)
+                val intentQuestion21 = Intent(this@Question20, Question21::class.java)
+
+                if (radioButton == rb_question20_opc2) {
+                    AppConstants.score = AppConstants.score + 1
+                    startActivity(intentQuestion21)
+                } else {
+                    startActivity(intentQuestion21)
+                }
             }
-
         }
     }
 }

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import com.dixie.diagnogdixie.R
 import com.dixie.diagnogdixie.constants.AppConstants
 import kotlinx.android.synthetic.main.activity_question6.*
@@ -16,8 +17,6 @@ class Question6 : AppCompatActivity() {
     var touchTextView2: Int = 0
     var touchTextView3: Int = 0
     var touchTextView4: Int = 0
-    var touchTextView5: Int = 0
-    var touchTextView6: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -92,8 +91,14 @@ class Question6 : AppCompatActivity() {
         }
 
         bt_Question6.setOnClickListener {
+            //Verifica si NO se ha seleccionado un item
+            if(touchTextView1 % 2 == 0 && touchTextView2 % 2 == 0 && touchTextView3 % 2 == 0
+                    && touchTextView4 % 2 == 0){
+                Toast.makeText(this,getString(R.string.text_validar_siguiente), Toast.LENGTH_LONG).show()
+            }
+
             //Verifica que esten seleccionados los items correctos
-            if((touchTextView1 % 2 != 0 || touchTextView4 % 2 != 0) //Que solo uno de los tres este seleccionado
+            else if((touchTextView1 % 2 != 0 || touchTextView4 % 2 != 0) //Que solo uno de los tres este seleccionado
                     ||
                     (touchTextView1 % 2 != 0 && touchTextView4 % 2 != 0 ) //Que esten seleccionados 2 correctos
             ){

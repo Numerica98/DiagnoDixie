@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import android.widget.Toast
 import com.dixie.diagnogdixie.R
 import com.dixie.diagnogdixie.activities.FinishActivity
 import com.dixie.diagnogdixie.constants.AppConstants
@@ -112,8 +113,14 @@ class Question40 : AppCompatActivity() {
         }
 
         bt_Question40.setOnClickListener {
+            //Verifica si NO se ha seleccionado un item
+            if(touchTextView1 % 2 == 0 && touchTextView2 % 2 == 0 && touchTextView3 % 2 == 0
+                    && touchTextView4 % 2 == 0 && touchTextView5 % 2 == 0 && touchTextView6 % 2 == 0){
+                Toast.makeText(this,getString(R.string.text_validar_siguiente), Toast.LENGTH_LONG).show()
+            }
+
             //Verifica que esten seleccionados los items correctos
-            if((touchTextView1 % 2 != 0 || touchTextView3 % 2 != 0 || touchTextView5 % 2 != 0) //Que solo uno de los tres este seleccionado
+            else if((touchTextView1 % 2 != 0 || touchTextView3 % 2 != 0 || touchTextView5 % 2 != 0) //Que solo uno de los tres este seleccionado
                     ||
                     (touchTextView1 % 2 != 0 && touchTextView3 % 2 != 0 && touchTextView5 % 2 != 0) //Que todos los items correctos esten seleccionados
             ){

@@ -5,6 +5,7 @@ import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import com.dixie.diagnogdixie.R
 import com.dixie.diagnogdixie.constants.AppConstants
 import kotlinx.android.synthetic.main.activity_question3.*
@@ -111,8 +112,14 @@ class Question3 : AppCompatActivity() {
         }
 
         bt_Question3.setOnClickListener {
+            //Verifica si NO se ha seleccionado un item
+            if(touchTextView1 % 2 == 0 && touchTextView2 % 2 == 0 && touchTextView3 % 2 == 0
+                    && touchTextView4 % 2 == 0 && touchTextView5 % 2 == 0 && touchTextView6 % 2 == 0){
+                Toast.makeText(this,getString(R.string.text_validar_siguiente), Toast.LENGTH_LONG).show()
+            }
+
             //Verifica que esten seleccionados los items correctos
-            if(touchTextView3 % 2 != 0){
+            else if(touchTextView3 % 2 != 0){
                 //Aumenta el puntaje del nino
                 AppConstants.score = AppConstants.score +1
 
