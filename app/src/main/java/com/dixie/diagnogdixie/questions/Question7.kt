@@ -28,6 +28,7 @@ class Question7 : AppCompatActivity() {
         val play = findViewById(R.id.btn_play_7) as Button
         play.setOnClickListener {
             val mp = MediaPlayer.create(this, R.raw.dra)
+            mp.stop()
             mp.start()
         }
 
