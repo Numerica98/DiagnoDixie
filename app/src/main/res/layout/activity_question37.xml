@@ -18,19 +18,36 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-            <TextView
-                    android:id="@+id/tv_question37"
+            <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/margin_view"
-                    android:text="@string/text_question37"
-                    android:textColor="@color/text"
-                    android:textSize="@dimen/text_main"/>
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
 
+                <TextView
+                        android:id="@+id/tv_question30"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_view"
+                        android:text="@string/text_question37"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_main"
+                        android:fontFamily="@font/righteous"/>
+
+                <ImageView
+                        android:id="@+id/character_37"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_image"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dimen_left_character"
+                        android:src="@drawable/ic_play_arrow_black_60dp"/>
+            </LinearLayout>
             <RadioGroup
                     android:id="@+id/rg_question37"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/righteous">
 
                 <RadioButton
                         android:id="@+id/rb_question37_opc1"
@@ -38,7 +55,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/text_p"
                         android:textSize="@dimen/text_main"
-                        android:layout_margin="@dimen/margin_view"/>
+                        android:layout_margin="@dimen/margin_view"
+                        android:fontFamily="@font/righteous"/>
 
                 <RadioButton
                         android:id="@+id/rb_question37_opc2"
@@ -46,7 +64,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/text_b"
                         android:textSize="@dimen/text_main"
-                        android:layout_margin="@dimen/margin_view"/>
+                        android:layout_margin="@dimen/margin_view"
+                        android:fontFamily="@font/righteous"/>
 
                 <RadioButton
                         android:id="@+id/rb_question37_opc3"
@@ -54,7 +73,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/text_t"
                         android:textSize="@dimen/text_main"
-                        android:layout_margin="@dimen/margin_view"/>
+                        android:layout_margin="@dimen/margin_view"
+                        android:fontFamily="@font/righteous"/>
 
             </RadioGroup>
 
@@ -66,7 +86,9 @@
                     android:layout_gravity="center_horizontal"
                     android:text="@string/text_siguiente"
                     android:textColor="@color/text"
-                    android:textSize="@dimen/text_main" />
+                    android:textSize="@dimen/text_main"
+                    android:fontFamily="@font/righteous"
+            android:background="@color/background_button"/>
 
         </LinearLayout>
     </ScrollView>

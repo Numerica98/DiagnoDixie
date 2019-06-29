@@ -17,16 +17,31 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
 
-            <TextView
-                android:id="@+id/tv_question39"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_view"
-                android:text="@string/text_question39"
-                android:textColor="@color/text"
-                android:textSize="@dimen/text_main"/>
+                <TextView
+                        android:id="@+id/tv_question30"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_view"
+                        android:text="@string/text_question39"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_main"
+                        android:fontFamily="@font/righteous"/>
 
+                <ImageView
+                        android:id="@+id/character_39"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_image"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dimen_left_character"
+                        android:src="@drawable/ic_play_arrow_black_60dp"/>
+            </LinearLayout>
                 <TextView
                     android:id="@+id/tv_question39_tapon"
                     android:layout_width="150dp"
@@ -36,6 +51,7 @@
                     android:textColor="@color/text"
                     android:text="@string/text_tapon"
                     android:textSize="@dimen/text_main"
+                    android:fontFamily="@font/righteous"
                     android:background="@color/colorWhite"/>
 
                 <TextView
@@ -47,7 +63,8 @@
                     android:textColor="@color/text"
                     android:text="@string/text_jabon"
                     android:textSize="@dimen/text_main"
-                    android:background="@color/colorWhite"/>
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/righteous"/>
 
                 <TextView
                     android:id="@+id/tv_question39_jadon"
@@ -58,7 +75,8 @@
                     android:textColor="@color/text"
                     android:text="@string/text_jadon"
                     android:textSize="@dimen/text_main"
-                    android:background="@color/colorWhite"/>
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/righteous"/>
 
                 <TextView
                     android:id="@+id/tv_question39_bastion"
@@ -69,7 +87,8 @@
                     android:textColor="@color/text"
                     android:text="@string/text_bastion"
                     android:textSize="@dimen/text_main"
-                    android:background="@color/colorWhite"/>
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/righteous"/>
 
                 <TextView
                     android:id="@+id/tv_question39_dastion"
@@ -80,7 +99,8 @@
                     android:textColor="@color/text"
                     android:text="@string/text_dastion"
                     android:textSize="@dimen/text_main"
-                    android:background="@color/colorWhite"/>
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/righteous"/>
 
                 <TextView
                     android:id="@+id/tv_question39_patron"
@@ -91,7 +111,8 @@
                     android:textColor="@color/text"
                     android:text="@string/text_patron"
                     android:textSize="@dimen/text_main"
-                    android:background="@color/colorWhite"/>
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/righteous"/>
 
             <TextView
                 android:id="@+id/tv_question39_patorn"
@@ -102,7 +123,8 @@
                 android:textColor="@color/text"
                 android:text="@string/text_patorn"
                 android:textSize="@dimen/text_main"
-                android:background="@color/colorWhite"/>
+                android:background="@color/colorWhite"
+                android:fontFamily="@font/righteous"/>
 
             <Button
                 android:id="@+id/bt_Question39"
@@ -112,7 +134,8 @@
                 android:layout_gravity="center_horizontal"
                 android:text="@string/text_siguiente"
                 android:textColor="@color/text"
-                android:textSize="@dimen/text_main" />
+                android:textSize="@dimen/text_main"
+            android:background="@color/background_button"/>
 
         </LinearLayout>
 

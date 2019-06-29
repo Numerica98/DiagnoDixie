@@ -3,7 +3,6 @@ package com.dixie.diagnogdixie.questions
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.RadioButton
 import android.widget.Toast

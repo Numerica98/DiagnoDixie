@@ -5,104 +5,128 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-    android:background="@color/background_app"
-    android:orientation="vertical"
+        android:background="@color/background_app"
+        android:orientation="vertical"
         tools:context=".questions.Question40">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <TextView
-                android:id="@+id/tv_question40"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin_view"
-                android:text="@string/text_question40"
-                android:textColor="@color/text"
-                android:textSize="@dimen/text_main"/>
+                android:orientation="vertical"
+                android:gravity="center">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                <TextView
+                        android:id="@+id/tv_question30"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_view"
+                        android:text="@string/text_question40"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_main"
+                        android:fontFamily="@font/righteous"/>
+
+                <ImageView
+                        android:id="@+id/character_40"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_image"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dimen_left_character"
+                        android:src="@drawable/ic_play_arrow_black_60dp"/>
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/tv_question40_queso"
-                android:layout_width="150dp"
-                android:layout_height="60dp"
-                android:layout_margin="@dimen/margin_view"
-                android:textAlignment="center"
-                android:textColor="@color/text"
-                android:text="@string/text_queso"
-                android:textSize="@dimen/text_main"
-                android:background="@color/colorWhite"/>
+                    android:id="@+id/tv_question40_queso"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/margin_view"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:text="@string/text_queso"
+                    android:textSize="@dimen/text_main"
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/righteous"/>
 
             <TextView
-                android:id="@+id/tv_question40_pueso"
-                android:layout_width="150dp"
-                android:layout_height="60dp"
-                android:layout_margin="@dimen/margin_view"
-                android:textAlignment="center"
-                android:textColor="@color/text"
-                android:text="@string/text_pueso"
-                android:textSize="@dimen/text_main"
-                android:background="@color/colorWhite"/>
+                    android:id="@+id/tv_question40_pueso"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/margin_view"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:text="@string/text_pueso"
+                    android:textSize="@dimen/text_main"
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/righteous"/>
 
             <TextView
-                android:id="@+id/tv_question40_pronto"
-                android:layout_width="150dp"
-                android:layout_height="60dp"
-                android:layout_margin="@dimen/margin_view"
-                android:textAlignment="center"
-                android:textColor="@color/text"
-                android:text="@string/text_pronto"
-                android:textSize="@dimen/text_main"
-                android:background="@color/colorWhite"/>
+                    android:id="@+id/tv_question40_pronto"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/margin_view"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:text="@string/text_pronto"
+                    android:textSize="@dimen/text_main"
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/righteous"/>
 
             <TextView
-                android:id="@+id/tv_question40_pornto"
-                android:layout_width="150dp"
-                android:layout_height="60dp"
-                android:layout_margin="@dimen/margin_view"
-                android:textAlignment="center"
-                android:textColor="@color/text"
-                android:text="@string/text_pornto"
-                android:textSize="@dimen/text_main"
-                android:background="@color/colorWhite"/>
+                    android:id="@+id/tv_question40_pornto"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/margin_view"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:text="@string/text_pornto"
+                    android:textSize="@dimen/text_main"
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/righteous"/>
 
             <TextView
-                android:id="@+id/tv_question40_cual"
-                android:layout_width="150dp"
-                android:layout_height="60dp"
-                android:layout_margin="@dimen/margin_view"
-                android:textAlignment="center"
-                android:textColor="@color/text"
-                android:text="@string/text_cual"
-                android:textSize="@dimen/text_main"
-                android:background="@color/colorWhite"/>
+                    android:id="@+id/tv_question40_cual"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/margin_view"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:text="@string/text_cual"
+                    android:textSize="@dimen/text_main"
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/righteous"/>
 
             <TextView
-                android:id="@+id/tv_question40_caul"
-                android:layout_width="150dp"
-                android:layout_height="60dp"
-                android:layout_margin="@dimen/margin_view"
-                android:textAlignment="center"
-                android:textColor="@color/text"
-                android:text="@string/text_caul"
-                android:textSize="@dimen/text_main"
-                android:background="@color/colorWhite"/>
+                    android:id="@+id/tv_question40_caul"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/margin_view"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:text="@string/text_caul"
+                    android:textSize="@dimen/text_main"
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/righteous"/>
 
             <Button
-                android:id="@+id/bt_Question40"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/text_main"
-                android:layout_gravity="center_horizontal"
-                android:text="@string/text_siguiente"
-                android:textColor="@color/text"
-                android:textSize="@dimen/text_main" />
+                    android:id="@+id/bt_Question40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_main"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/text_siguiente"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/text_main"
+                    android:fontFamily="@font/righteous"
+                    android:background="@color/background_button"/>
 
         </LinearLayout>
 

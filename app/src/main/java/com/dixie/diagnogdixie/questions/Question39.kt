@@ -3,6 +3,7 @@ package com.dixie.diagnogdixie.questions
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.dixie.diagnogdixie.R
@@ -10,6 +11,7 @@ import com.dixie.diagnogdixie.constants.AppConstants
 import kotlinx.android.synthetic.main.activity_question39.*
 
 class Question39 : AppCompatActivity() {
+    private lateinit var imageCharacter: ImageView
     //Contadores para controlar si se selecciona el item mas de una vez
     var touchTextView1: Int = 0
     var touchTextView2: Int = 0
@@ -22,6 +24,26 @@ class Question39 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question39)
+
+
+        //Id del imageview a poner la imagen
+        imageCharacter = findViewById(R.id.character_39)
+
+        //Setea la imagen del personaje escogido
+        if(AppConstants.characterKid == AppConstants.cat){
+            imageCharacter.setImageResource(R.drawable.neko)
+        } else if(AppConstants.characterKid == AppConstants.dog){
+            imageCharacter.setImageResource(R.drawable.dogui)
+        } else if(AppConstants.characterKid == AppConstants.dinosaur){
+            imageCharacter.setImageResource(R.drawable.rex)
+        } else if(AppConstants.characterKid == AppConstants.chiken){
+            imageCharacter.setImageResource(R.drawable.pio)
+        } else if(AppConstants.characterKid == AppConstants.shark){
+            imageCharacter.setImageResource(R.drawable.sharky)
+        } else if(AppConstants.characterKid == AppConstants.penguin){
+            imageCharacter.setImageResource(R.drawable.pingui)
+        }
+
 
         //Variables de id
         val textView1 = findViewById<TextView>(R.id.tv_question39_tapon)
