@@ -20,25 +20,37 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
 
                 <TextView
                     android:id="@+id/tv_question9"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_view"
                     android:text="@string/text_question9"
                     android:textColor="@color/text"
-                    android:textSize="@dimen/text_main"/>
+                    android:textSize="@dimen/text_main"
+                    android:fontFamily="@font/righteous"/>
 
                 <ImageView
-                    android:id="@+id/btn_play_9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:id="@+id/character_9"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_image"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/dimen_left_character"
                     android:src="@drawable/ic_play_arrow_black_60dp"/>
 
             </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_play_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_view"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_play_arrow_black_60dp"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -56,7 +68,8 @@
                     android:textColor="@color/text"
                     android:text="@string/text_tra"
                     android:textSize="@dimen/text_main"
-                    android:background="@color/colorWhite"/>
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/righteous"/>
 
                 <TextView
                     android:id="@+id/tv_question9_dra_0.1"
@@ -69,7 +82,8 @@
                     android:textColor="@color/text"
                     android:text="@string/text_dra"
                     android:textSize="@dimen/text_main"
-                    android:background="@color/colorWhite"/>
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/righteous"/>
 
                 <TextView
                     android:id="@+id/tv_question9_par_1.0"
@@ -82,7 +96,8 @@
                     android:textColor="@color/text"
                     android:text="@string/text_par"
                     android:textSize="@dimen/text_main"
-                    android:background="@color/colorWhite"/>
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/righteous"/>
 
                 <TextView
                     android:id="@+id/tv_question9_tra_1.1"
@@ -96,7 +111,8 @@
                     android:textColor="@color/text"
                     android:text="@string/text_tra"
                     android:textSize="@dimen/text_main"
-                    android:background="@color/colorWhite"/>
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/righteous"/>
 
                 <TextView
                     android:id="@+id/tv_question9_pra_2.0"
@@ -109,7 +125,8 @@
                     android:textColor="@color/text"
                     android:text="@string/text_pra"
                     android:textSize="@dimen/text_main"
-                    android:background="@color/colorWhite"/>
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/righteous"/>
 
                 <TextView
                     android:id="@+id/tv_question9_bra_2.1"
@@ -123,7 +140,8 @@
                     android:textColor="@color/text"
                     android:text="@string/text_bra"
                     android:textSize="@dimen/text_main"
-                    android:background="@color/colorWhite"/>
+                    android:background="@color/colorWhite"
+                    android:fontFamily="@font/righteous"/>
 
             </RelativeLayout>
 
@@ -134,8 +152,10 @@
                 android:layout_margin="@dimen/text_main"
                 android:layout_gravity="center_horizontal"
                 android:text="@string/text_siguiente"
-                android:textColor="@color/text"
-                android:textSize="@dimen/text_main" />
+                android:textColor="@color/colorWhite"
+                android:background="@color/background_button"
+                android:textSize="@dimen/text_main"
+                android:fontFamily="@font/righteous"/>
 
         </LinearLayout>
 

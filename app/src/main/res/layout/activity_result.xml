@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/text_title_result"
                 android:textColor="@color/text"
-                android:textSize="@dimen/text_main"
+                android:textSize="@dimen/dimen_text_normal"
                 android:layout_margin="@dimen/margin_view"
                 android:textAlignment="center"
                 android:textStyle="italic"/>
@@ -37,7 +37,7 @@
                 android:layout_margin="@dimen/margin_view"
                 android:text="@string/text_answers"
                 android:textAlignment="center"
-                android:textSize="@dimen/text_main"
+                android:textSize="@dimen/dimen_text_normal"
                 android:textColor="@color/text"/>
 
             <TextView
@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_view"
                 android:text="0"
-                android:textSize="@dimen/text_main"
+                android:textSize="@dimen/dimen_text_normal"
                 android:textColor="@color/text"/>
 
             <TextView
@@ -56,7 +56,7 @@
                 android:layout_margin="@dimen/margin_view"
                 android:text="@string/text_diagnostic"
                 android:textAlignment="center"
-                android:textSize="@dimen/text_main"
+                android:textSize="@dimen/dimen_text_normal"
                 android:textColor="@color/text"/>
 
             <TextView
@@ -66,7 +66,7 @@
                 android:layout_margin="@dimen/margin_view"
                 android:text="Diagnostico"
                 android:textAlignment="center"
-                android:textSize="@dimen/text_main"
+                android:textSize="@dimen/dimen_text_normal"
                 android:textColor="@color/text"/>
 
             <Button
@@ -75,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_view"
                 android:text="@string/text_terminar"
-                android:textSize="@dimen/text_main"
+                android:textSize="@dimen/dimen_text_normal"
                 android:textColor="@color/text_button"
                 android:background="@color/background_button"
                 tools:ignore="HardcodedText" />

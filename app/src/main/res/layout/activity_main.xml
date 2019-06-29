@@ -29,9 +29,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_view"
+                android:textAlignment="center"
                 android:text="@string/text_ingreso_edad"
-                android:textSize="@dimen/text_main"
-                android:textColor="@color/text"/>
+                android:textSize="@dimen/dimen_text_normal"
+                android:textColor="@color/text"
+                android:fontFamily="@font/righteous"/>
 
             <EditText
                 android:id="@+id/ed_EdadKid"
@@ -42,16 +44,19 @@
                 android:textAlignment="center"
                 android:inputType="number"
                 android:hint=" Ej: 6"
-                android:textSize="@dimen/text_main" />
+                android:textSize="@dimen/dimen_text_normal"
+                android:fontFamily="@font/righteous"/>
 
             <TextView
                 android:id="@+id/tv_PasswordUser"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_view"
+                android:textAlignment="center"
                 android:text="@string/text_ingrese_contra"
-                android:textSize="@dimen/text_main"
-                android:textColor="@color/text"/>
+                android:textSize="@dimen/dimen_text_normal"
+                android:textColor="@color/text"
+                android:fontFamily="@font/righteous"/>
 
             <EditText
                 android:id="@+id/ed_PaswwordUser"
@@ -62,7 +67,8 @@
                 android:textAlignment="center"
                 android:inputType="textPassword"
                 android:hint="@string/text_ej_edittext"
-                android:textSize="@dimen/text_main" />
+                android:textSize="@dimen/dimen_text_normal"
+                android:fontFamily="@font/righteous"/>
 
             <Button
                 android:id="@+id/bt_Next"
@@ -70,10 +76,11 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_view"
                 android:text="@string/text_siguiente"
-                android:textSize="@dimen/text_main"
+                android:textSize="@dimen/dimen_text_normal"
                 android:textColor="@color/text_button"
                 android:background="@color/background_button"
-                tools:ignore="HardcodedText" />
+                tools:ignore="HardcodedText"
+                android:fontFamily="@font/righteous"/>
 
         </LinearLayout>
     </ScrollView>

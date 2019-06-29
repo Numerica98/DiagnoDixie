@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="margin_view">10dp</dimen>
-    <dimen name="text_main">25sp</dimen>
+    <dimen name="text_main">40sp</dimen>
     <dimen name="width_button">150dp</dimen>
     <dimen name="dimen_name_left">35dp</dimen>
     <dimen name="dimen_name_rigth">50dp</dimen>
+    <dimen name="dimen_image">100dp</dimen>
+    <dimen name="dimen_left_character">10dp</dimen>
+    <dimen name="dimen_text_normal">30sp</dimen>
+    <dimen name="dimen_text_name_character">25sp</dimen>
 </resources>

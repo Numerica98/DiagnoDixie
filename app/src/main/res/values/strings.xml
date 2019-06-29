@@ -74,7 +74,7 @@
     <string name="text_congrats">¡FELICIDADES! ¡TERMINASTE EL JUEGO!</string>
     <string name="text_indication_password_result">Para que tu encargado sepa lo super que te fue, dale el dispositivo para que ingrese la contaseña:</string>
     <string name="text_title_result">RESULTADOS DE LA PRUEBA</string>
-    <string name="text_answers">Él/la menor contesto correctamente un total de:</string>
+    <string name="text_answers">Él/la niño/a contesto correctamente un total de:</string>
     <string name="text_diagnostic">Por lo que se concluye que:</string>
     <string name="text_title_character">¡Toca a un personaje para iniciar el juego!</string>
     <string name="text_neko">Neko</string>
@@ -87,10 +87,10 @@
     <string name="text_question31">21. Completa la palabra:   pa__a</string>
     <string name="text_ingreso_edad">Ingrese la edad de él/la niño/a:</string>
     <string name="text_question35">23. Completa la palabra:   __rama</string>
-    <string name="text_condicion">Él/la menor requiere apoyo en su proceso lector</string>
+    <string name="text_condicion">Él/la niño/a requiere apoyo en su proceso lector</string>
     <string name="text_condicion_mayor">La persona requiere apoyo en su proceso lector</string>
-    <string name="text_no_condicion">Él/la menor no presenta la condición</string>
+    <string name="text_no_condicion">Él/la niño/a no presenta la condición</string>
     <string name="text_no_condicion_mayor">La persona no presenta la condición</string>
-    <string name="text_codicion_indefinida">Él/la menor tiene una edad muy temprana para definir si presenta o no la condicion</string>
+    <string name="text_codicion_indefinida">Él/la niño/a tiene una edad muy temprana para definir si presenta o no la condicion</string>
     <string name="text_validar_siguiente">Debes seleccionar una opción para continuar</string>
 </resources>
