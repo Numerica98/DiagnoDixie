@@ -18,21 +18,40 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-            <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
                     android:id="@+id/tv_question25"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/margin_view"
                     android:text="@string/text_question25"
                     android:textColor="@color/text"
-                    android:textSize="@dimen/text_main"/>
+                    android:textSize="@dimen/text_main"
+                    android:fontFamily="@font/righteous"/>
 
-            <Button
-                    android:id="@+id/btn_play_25"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/btn_play_text"/>
+                <ImageView
+                    android:id="@+id/character_25"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_image"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/dimen_left_character"
+                    android:src="@drawable/ic_play_arrow_black_60dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_play_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_view"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_play_arrow_black_60dp"/>
 
             <RadioGroup
                     android:id="@+id/rg_question25"
@@ -45,7 +64,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/text_te"
                         android:textSize="@dimen/text_main"
-                        android:layout_margin="@dimen/margin_view"/>
+                        android:layout_margin="@dimen/margin_view"
+                    android:fontFamily="@font/righteous"/>
 
                 <RadioButton
                         android:id="@+id/rb_question25_opc2"
@@ -53,7 +73,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/text_pe"
                         android:textSize="@dimen/text_main"
-                        android:layout_margin="@dimen/margin_view"/>
+                        android:layout_margin="@dimen/margin_view"
+                    android:fontFamily="@font/righteous"/>
 
                 <RadioButton
                         android:id="@+id/rb_question25_opc3"
@@ -61,7 +82,8 @@
                         android:layout_height="wrap_content"
                         android:text="@string/text_de"
                         android:textSize="@dimen/text_main"
-                        android:layout_margin="@dimen/margin_view"/>
+                        android:layout_margin="@dimen/margin_view"
+                    android:fontFamily="@font/righteous"/>
 
             </RadioGroup>
 
@@ -72,8 +94,10 @@
                     android:layout_margin="@dimen/text_main"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/text_siguiente"
-                    android:textColor="@color/text"
-                    android:textSize="@dimen/text_main" />
+                    android:textColor="@color/colorWhite"
+                android:background="@color/background_button"
+                    android:textSize="@dimen/text_main"
+                android:fontFamily="@font/righteous"/>
 
         </LinearLayout>
     </ScrollView>

@@ -47,7 +47,6 @@ class Question3 : AppCompatActivity() {
         val play = findViewById(R.id.btn_play_3) as ImageView
         play.setOnClickListener {
             val mp = MediaPlayer.create(this, R.raw.e)
-            mp.stop()
             mp.start()
         }
 
