@@ -93,4 +93,9 @@
     <string name="text_no_condicion_mayor">La persona no presenta la condición</string>
     <string name="text_codicion_indefinida">Él/la niño/a tiene una edad muy temprana para definir si presenta o no la condicion</string>
     <string name="text_validar_siguiente">Debes seleccionar una opción para continuar</string>
+    <string name="motivation1">¡Lo haces genial!</string>
+    <string name="motivation2">¡Eres capaz de hacerlo!</string>
+    <string name="motivation3">¡Cada vez eres mejor!</string>
+    <string name="motivation4">¡Puedes lograrlo!</string>
+    <string name="motivation5">Casi terminas ¡Tú puedes!</string>
 </resources>

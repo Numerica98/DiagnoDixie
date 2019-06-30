@@ -31,19 +31,37 @@ class Question10 : AppCompatActivity() {
         //Id del imageview a poner la imagen
         imageCharacter = findViewById(R.id.character_10)
 
-        //Setea la imagen del personaje escogido
+        //Setea la imagen del personaje escogido, un sonido y mensaje
         if(AppConstants.characterKid == AppConstants.cat){
             imageCharacter.setImageResource(R.drawable.neko)
+            val mpNeko = MediaPlayer.create(this, R.raw.neko)
+            mpNeko.start()
+            Toast.makeText(this, getString(R.string.motivation2), Toast.LENGTH_LONG).show()
         } else if(AppConstants.characterKid == AppConstants.dog){
             imageCharacter.setImageResource(R.drawable.dogui)
+            val mpDogui = MediaPlayer.create(this, R.raw.dogui)
+            mpDogui.start()
+            Toast.makeText(this, getString(R.string.motivation2), Toast.LENGTH_LONG).show()
         } else if(AppConstants.characterKid == AppConstants.dinosaur){
             imageCharacter.setImageResource(R.drawable.rex)
+            val mpRex = MediaPlayer.create(this, R.raw.rex)
+            mpRex.start()
+            Toast.makeText(this, getString(R.string.motivation2), Toast.LENGTH_LONG).show()
         } else if(AppConstants.characterKid == AppConstants.chiken){
             imageCharacter.setImageResource(R.drawable.pio)
+            val mpPio = MediaPlayer.create(this, R.raw.pio)
+            mpPio.start()
+            Toast.makeText(this, getString(R.string.motivation2), Toast.LENGTH_LONG).show()
         } else if(AppConstants.characterKid == AppConstants.shark){
             imageCharacter.setImageResource(R.drawable.sharky)
+            val mpSharky = MediaPlayer.create(this, R.raw.sharky)
+            mpSharky.start()
+            Toast.makeText(this, getString(R.string.motivation2), Toast.LENGTH_LONG).show()
         } else if(AppConstants.characterKid == AppConstants.penguin){
             imageCharacter.setImageResource(R.drawable.pingui)
+            val mpPingui = MediaPlayer.create(this, R.raw.pingui)
+            mpPingui.start()
+            Toast.makeText(this, getString(R.string.motivation2), Toast.LENGTH_LONG).show()
         }
 
         //Listener e implementacion de sonido

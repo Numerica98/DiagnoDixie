@@ -1,6 +1,7 @@
 package com.dixie.diagnogdixie.activities
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.dixie.diagnogdixie.constants.AppConstants
@@ -27,6 +28,10 @@ class CharacterActivity : AppCompatActivity() {
             //Guarda el id del gato
             AppConstants.characterKid = iv_cat.id
 
+            //Genera el sonido del personaje
+            val mpNeko = MediaPlayer.create(this, R.raw.neko)
+            mpNeko.start()
+
             //Realiza el intent a la otra primera pregunta
             val intentQuestion1 = Intent(this@CharacterActivity, Question1::class.java)
             startActivity(intentQuestion1)
@@ -35,6 +40,10 @@ class CharacterActivity : AppCompatActivity() {
         //Si toca la imagen del perro, guarda el id del perro
         iv_dog.setOnClickListener {
             AppConstants.characterKid = iv_dog.id
+
+            //Genera el sonido del personaje
+            val mpDogui = MediaPlayer.create(this, R.raw.dogui)
+            mpDogui.start()
 
             //Realiza el intent a la otra primera pregunta
             val intentQuestion1 = Intent(this@CharacterActivity, Question1::class.java)
@@ -45,6 +54,10 @@ class CharacterActivity : AppCompatActivity() {
         iv_dinosaur.setOnClickListener {
             AppConstants.characterKid = iv_dinosaur.id
 
+            //Genera el sonido del personaje
+            val mpRex = MediaPlayer.create(this, R.raw.rex)
+            mpRex.start()
+
             //Realiza el intent a la otra primera pregunta
             val intentQuestion1 = Intent(this@CharacterActivity, Question1::class.java)
             startActivity(intentQuestion1)
@@ -53,6 +66,10 @@ class CharacterActivity : AppCompatActivity() {
         //Si toca la imagen del pollo, guarda el id del pollo
         iv_chicken.setOnClickListener {
             AppConstants.characterKid = iv_chicken.id
+
+            //Genera el sonido del personaje
+            val mpPio = MediaPlayer.create(this, R.raw.pio)
+            mpPio.start()
 
             //Realiza el intent a la otra primera pregunta
             val intentQuestion1 = Intent(this@CharacterActivity, Question1::class.java)
@@ -63,6 +80,10 @@ class CharacterActivity : AppCompatActivity() {
         iv_shark.setOnClickListener {
             AppConstants.characterKid = iv_shark.id
 
+            //Genera el sonido del personaje
+            val mpSharky = MediaPlayer.create(this, R.raw.sharky)
+            mpSharky.start()
+
             //Realiza el intent a la otra primera pregunta
             val intentQuestion1 = Intent(this@CharacterActivity, Question1::class.java)
             startActivity(intentQuestion1)
@@ -71,6 +92,10 @@ class CharacterActivity : AppCompatActivity() {
         //Si toca la imagen del pinguino, guarda el id del pinguino
         iv_penguin.setOnClickListener {
             AppConstants.characterKid = iv_penguin.id
+
+            //Genera el sonido del personaje
+            val mpPingui = MediaPlayer.create(this, R.raw.pingui)
+            mpPingui.start()
 
             //Realiza el intent a la otra primera pregunta
             val intentQuestion1 = Intent(this@CharacterActivity, Question1::class.java)
