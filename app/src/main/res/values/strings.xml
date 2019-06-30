@@ -53,8 +53,8 @@
     <string name="text_tres">tres</string>
     <string name="text_ters">ters</string>
     <string name="text_question30">20. Haz click en la palabra correcta:</string>
-    <string name="text_question32">22. Completa la palabra: \n __ueso</string>
-    <string name="text_question37">24. Completa la palabra: \n __roma</string>
+    <string name="text_question32">22. Completa la palabra: \n _ueso</string>
+    <string name="text_question37">24. Completa la palabra: \n _roma</string>
     <string name="text_t">t</string>
     <string name="text_question39">25. Haz click en las palabras que son correctas:</string>
     <string name="text_tapon">tapón</string>
@@ -84,9 +84,9 @@
     <string name="text_sharky">Sharky</string>
     <string name="text_pingui">Pingui</string>
     <string name="btn_play_text">Play</string>
-    <string name="text_question31">21. Completa la palabra:   pa__a</string>
+    <string name="text_question31">21. Completa la palabra:   pa_a</string>
     <string name="text_ingreso_edad">Ingrese la edad de él/la niño/a:</string>
-    <string name="text_question35">23. Completa la palabra:   __rama</string>
+    <string name="text_question35">23. Completa la palabra:   _rama</string>
     <string name="text_condicion">Él/la niño/a requiere apoyo en su proceso lector</string>
     <string name="text_condicion_mayor">La persona requiere apoyo en su proceso lector</string>
     <string name="text_no_condicion">Él/la niño/a no presenta la condición</string>

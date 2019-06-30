@@ -18,26 +18,26 @@ class Question37 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question37)
 
+        //Id del imageview a poner la imagen
+        imageCharacter = findViewById(R.id.character_37)
+
+        //Setea la imagen del personaje escogido
+        if(AppConstants.characterKid == AppConstants.cat){
+            imageCharacter.setImageResource(R.drawable.neko)
+        } else if(AppConstants.characterKid == AppConstants.dog){
+            imageCharacter.setImageResource(R.drawable.dogui)
+        } else if(AppConstants.characterKid == AppConstants.dinosaur){
+            imageCharacter.setImageResource(R.drawable.rex)
+        } else if(AppConstants.characterKid == AppConstants.chiken){
+            imageCharacter.setImageResource(R.drawable.pio)
+        } else if(AppConstants.characterKid == AppConstants.shark){
+            imageCharacter.setImageResource(R.drawable.sharky)
+        } else if(AppConstants.characterKid == AppConstants.penguin){
+            imageCharacter.setImageResource(R.drawable.pingui)
+        }
+
         bt_Question37.setOnClickListener {
             var valor = rg_question37.checkedRadioButtonId
-            //Id del imageview a poner la imagen
-            imageCharacter = findViewById(R.id.character_37)
-
-            //Setea la imagen del personaje escogido
-            if(AppConstants.characterKid == AppConstants.cat){
-                imageCharacter.setImageResource(R.drawable.neko)
-            } else if(AppConstants.characterKid == AppConstants.dog){
-                imageCharacter.setImageResource(R.drawable.dogui)
-            } else if(AppConstants.characterKid == AppConstants.dinosaur){
-                imageCharacter.setImageResource(R.drawable.rex)
-            } else if(AppConstants.characterKid == AppConstants.chiken){
-                imageCharacter.setImageResource(R.drawable.pio)
-            } else if(AppConstants.characterKid == AppConstants.shark){
-                imageCharacter.setImageResource(R.drawable.sharky)
-            } else if(AppConstants.characterKid == AppConstants.penguin){
-                imageCharacter.setImageResource(R.drawable.pingui)
-            }
-
 
             //Verifica que se halla seleccionado una opcion
             if(valor == -1){
